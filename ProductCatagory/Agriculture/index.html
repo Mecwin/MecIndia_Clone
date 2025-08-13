@@ -987,621 +987,162 @@
             </div>
         </div>
     </section> -->
-    <section class="uk-section-small">
-      <div class="uk-container uk-margin-bottom">
-        <div class="uk-text-large uk-margin-bottom">Products</div>
 
-        <div
-          uk-filter="target: #product-grid"
-          class="uk-flex uk-flex-wrap uk-flex-between"
-        >
-          <a
-            class="uk-margin-small-right uk-margin-small-bottom uk-button uk-button-small uk-button-default uk-button-outline-secondary"
-            uk-filter-control
-            href="#"
-          >
-            All
-          </a>
+<section style="padding: 20px 0;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 15px;">
+    <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">Products</h2>
 
-          <a
-            class="uk-margin-small-right uk-margin-small-bottom uk-button uk-button-small uk-button-default uk-button-outline-secondary"
-            uk-filter-control="[data-category='solar-dc-pumps']"
-            href="#"
-          >
-            Solar DC pumps
-          </a>
+    <!-- Filter Buttons -->
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
+      <button id="filter-all" style="padding: 8px 16px; font-size: 14px; border: 1px solid #ccc; background: #f0f0f0; border-radius: 4px; cursor: pointer; color: black;" onclick="filterProducts('all')">All</button>
+      <button id="filter-solar-dc-pumps" style="padding: 8px 16px; font-size: 14px; border: 1px solid #ccc; background: #f0f0f0; border-radius: 4px; cursor: pointer; color: black;" onclick="filterProducts('solar-dc-pumps')">Solar DC Pumps</button>
+      <button id="filter-solar-ac-pumps" style="padding: 8px 16px; font-size: 14px; border: 1px solid #ccc; background: #f0f0f0; border-radius: 4px; cursor: pointer; color: black;" onclick="filterProducts('solar-ac-pumps')">Solar AC Pumps</button>
+      <button id="filter-pump-controllers" style="padding: 8px 16px; font-size: 14px; border: 1px solid #ccc; background: #f0f0f0; border-radius: 4px; cursor: pointer; color: black;" onclick="filterProducts('pump-controllers')">Pump Controllers</button>
+      <button id="filter-ev-power-tiller" style="padding: 8px 16px; font-size: 14px; border: 1px solid #ccc; background: #f0f0f0; border-radius: 4px; cursor: pointer; color: black;" onclick="filterProducts('ev-power-tiller')">Motor for EV Power Tiller</button>
+      <button id="filter-ev-veeder" style="padding: 8px 16px; font-size: 14px; border: 1px solid #ccc; background: #f0f0f0; border-radius: 4px; cursor: pointer; color: black;" onclick="filterProducts('ev-veeder')">Motors for EV Veeder</button>
+      <button id="filter-gross-cutters" style="padding: 8px 16px; font-size: 14px; border: 1px solid #ccc; background: #f0f0f0; border-radius: 4px; cursor: pointer; color: black;" onclick="filterProducts('gross-cutters')">Motors for Grass Cutters</button>
+      <button id="filter-ev-tractors" style="padding: 8px 16px; font-size: 14px; border: 1px solid #ccc; background: #f0f0f0; border-radius: 4px; cursor: pointer; color: black;" onclick="filterProducts('ev-tractors')">EV Tractors</button>
+    </div>
 
-          <a
-            class="uk-margin-small-right uk-margin-small-bottom uk-button uk-button-small uk-button-default uk-button-outline-secondary"
-            uk-filter-control="[data-category='solar-ac-pumps']"
-            href="#"
-          >
-            Solar AC Pumps
-          </a>
+    <!-- Product Grid -->
+    <div id="product-grid" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: flex-start; align-items: stretch;">
+      <!-- Solar DC Surface Pump -->
+      <div class="product-card" data-category="solar-dc-pumps" style="width: 100%; max-width: 280px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+        <a href="../Agriculture/Products.html/solarDC/DCsurface.html" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; flex: 1;">
+          <img src="../../images/dcsurface.webp" alt="Solar DC Surface Pump" style="width: 100%; height: 180px; object-fit: cover;">
+        <div style="padding: 15px; display: flex; flex-direction: column; flex: 1;">
+  <h3 style="font-size: 16px; font-weight: bold; margin: 0 0 10px;">Solar DC Surface Pump</h3>
+  <p style="font-size: 12px; color: #999; margin: 0;">Capacity: 1 HP to 10 HP</p>
+  <p style="font-size: 12px; color: #999; margin: 0;">Head Range: 10 m – 50 m</p>
+  <p style="font-size: 12px; color: #999; margin: 0;">Flow Range: 250 LPM – 200 LPM</p>
+</div>
 
-          <a
-            class="uk-margin-small-right uk-margin-small-bottom uk-button uk-button-small uk-button-default uk-button-outline-secondary"
-            uk-filter-control="[data-category='pump-controllers']"
-            href="#"
-          >
-            Pump Controllers
-          </a>
-
-          <a
-            class="uk-margin-small-right uk-margin-small-bottom uk-button uk-button-small uk-button-default uk-button-outline-secondary"
-            uk-filter-control="[data-category='ev-power-tiller']"
-            href="#"
-          >
-            Motor for EV Power Tiller
-          </a>
-
-          <a
-            class="uk-margin-small-right uk-margin-small-bottom uk-button uk-button-small uk-button-default uk-button-outline-secondary"
-            uk-filter-control="[data-category='ev-veeder']"
-            href="#"
-          >
-            Motors for EV Veeder
-          </a>
-
-          <a
-            class="uk-margin-small-right uk-margin-small-bottom uk-button uk-button-small uk-button-default uk-button-outline-secondary"
-            uk-filter-control="[data-category='gross-cutters']"
-            href="#"
-          >
-            Motors for Gross cutters
-          </a>
-
-          <a
-            class="uk-margin-small-right uk-margin-small-bottom uk-button uk-button-small uk-button-default uk-button-outline-secondary"
-            uk-filter-control="[data-category='ev-tractors']"
-            href="#"
-          >
-            EV tractors
-          </a>
-        </div>
+        </a>
       </div>
 
-      <div class="uk-container uk-margin-bottom">
-        <div
-          id="product-grid"
-          class="uk-flex uk-flex-wrap uk-flex-between uk-flex-middle"
-        >
-          <!-- Solar DC Pumps -->
-          <div
-            data-category="solar-dc-pumps"
-            class="uk-width-1-4@m uk-margin-small-bottom"
-            style="width: 300px; height: 400px"
-          >
-            <a
-              href="../Agriculture/Products.html/solarDC/DCsurface.html"
-              class="uk-link-reset"
-            >
-              <div class="uk-card card-product">
-                <div class="uk-card-media-top">
-                  <picture>
-                    <img
-                      src="../../images/dcsurface.webp"
-                      alt="img"
-                      width="300"
-                      height="200"
-                      class=""
-                    />
-                  </picture>
-                </div>
-                <div class="uk-card-body card-product-body">
-                  <p class="uk-margin-remove-bottom">
-                    <small>Solar DC Suface pump</small>
-                  </p>
-                  <small class="uk-text-muted uk-text-truncate-max3"
-                    >Surface pumps range from Mecwin Solar support varied
-                    applications like field irrigation or supplying potable
-                    water to your communities, while drawing water from nearby
-                    water sources like lakes, ponds, canals or rivers.</small
-                  >
-                </div>
-              </div>
-            </a>
-          </div>
-          <div
-            data-category="solar-dc-pumps"
-            class="uk-width-1-4@m uk-margin-small-bottom"
-            style="width: 300px; height: 400px"
-          >
-            <a
-              href="../Agriculture/Products.html/solarDC/DCsubmersible.html"
-              class="uk-link-reset"
-            >
-              <div class="uk-card card-product">
-                <div class="uk-card-media-top">
-                  <picture>
-                    <img
-                      src="../../images/dcsubmersible.webp"
-                      alt="img"
-                      width="300"
-                      height="200"
-                      class=""
-                    />
-                  </picture>
-                </div>
-                <div class="uk-card-body card-product-body">
-                  <p class="uk-margin-remove-bottom">
-                    <small>Solar DC Submersible pump</small>
-                  </p>
-                  <small class="uk-text-muted uk-text-truncate-max3"
-                    >Submersible pumps range from Mecwin Solar support varied
-                    applications like field irrigation or supplying potable
-                    water for your communities, while drawing water from
-                    underground water sources like bore-wells or sumps</small
-                  >
-                </div>
-              </div>
-            </a>
-          </div>
+      <!-- Solar DC Submersible Pump -->
+      <div class="product-card" data-category="solar-dc-pumps" style="width: 100%; max-width: 280px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+        <a href="../Agriculture/Products.html/solarDC/DCsubmersible.html" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; flex: 1;">
+          <img src="../../images/dcsubmersible.webp" alt="Solar DC Submersible Pump" style="width: 100%; height: 180px; object-fit: cover;">
+       <div style="padding: 15px; display: flex; flex-direction: column; flex: 1;">
+  <h3 style="font-size: 16px; font-weight: bold; margin: 0 0 10px;">Solar DC Submersible Pump</h3>
+  <p style="font-size: 12px; color: #999; margin: 0;">Capacity: 1 HP to 10 HP</p>
+  <p style="font-size: 12px; color: #999; margin: 0;">Head Range: 30 m – 200 m</p>
+  <p style="font-size: 12px; color: #999; margin: 0;">Flow Range: 20 LPM – 1200 LPM</p>
+</div>
 
-          <!-- Solar AC Pumps -->
-          <div
-            data-category="solar-ac-pumps"
-            class="uk-width-1-4@m uk-margin-small-bottom"
-            style="width: 300px; height: 400px"
-          >
-            <a
-              href="../Agriculture/Products.html/SolarAcPumps/solarAcSubmerssible.html"
-              class="uk-link-reset"
-            >
-              <div class="uk-card card-product">
-                <div class="uk-card-media-top">
-                  <picture>
-                    <img
-                      src="../../images/dcsubmersible.webp"
-                      alt="img"
-                      width="300"
-                      height="200"
-                      class=""
-                    />
-                  </picture>
-                </div>
-                <div class="uk-card-body card-product-body">
-                  <p class="uk-margin-remove-bottom">
-                    <small>Solar AC Submersible pump</small>
-                  </p>
-                  <small class="uk-text-muted uk-text-truncate-max3"
-                    >Submersible pumps range from Mecwin Solar support varied
-                    applications like field irrigation or supplying potable
-                    water for your communities, while drawing water from
-                    underground water sources like bore-wells or sumps.</small
-                  >
-                </div>
-              </div>
-            </a>
-          </div>
-          <div
-            data-category="solar-ac-pumps"
-            class="uk-width-1-4@m uk-margin-small-bottom"
-            style="width: 300px; height: 400px"
-          >
-            <a
-              href="../Agriculture/Products.html/SolarAcPumps/solarAcSurface.html"
-              class="uk-link-reset"
-            >
-              <div class="uk-card card-product">
-                <div class="uk-card-media-top">
-                  <picture>
-                    <img
-                      src="../../images/dcsurface.webp"
-                      alt="img"
-                      width="300"
-                      height="200"
-                      class=""
-                    />
-                  </picture>
-                </div>
-                <div class="uk-card-body card-product-body">
-                  <p class="uk-margin-remove-bottom">
-                    <small>Solar AC Suface pump</small>
-                  </p>
-                  <small class="uk-text-muted uk-text-truncate-max3"
-                    >Surface pumps range from Mecwin Solar support varied
-                    applications like field irrigation or supplying potable
-                    water to your communities, while drawing water from nearby
-                    water sources like lakes, ponds, canals or rivers.</small
-                  >
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <!-- Pump Controllers -->
-          <div
-            data-category="pump-controllers"
-            class="uk-width-1-4@m uk-margin-small-bottom"
-            style="width: 300px; height: 400px"
-          >
-            <a
-              href="../Agriculture/Products.html/pumpController.html"
-              class="uk-link-reset"
-            >
-              <div class="uk-card card-product">
-                <div class="uk-card-media-top">
-                  <picture>
-                    <img
-                      src="../../images/IOT Controller.webp"
-                      alt="img"
-                      width="300"
-                      height="200"
-                      class=""
-                    />
-                  </picture>
-                </div>
-                <div class="uk-card-body card-product-body">
-                  <p class="uk-margin-remove-bottom">
-                    <small>Solar AC Submersible pump</small>
-                  </p>
-                  <small class="uk-text-muted uk-text-truncate-max3"
-                    >A MECWIN Solar MPPT (Maximum Power Point Tracking)
-                    controller is a vital component in solar photovoltaic
-                    systems, designed and manufactured in India. It optimizes
-                    power output from solar panels by continuously adjusting
-                    voltage and current to operate at the maximum power point
-                    (MPP), ensuring superior pump performance.</small
-                  >
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <!-- Motor for EV Power Tiller -->
-          <div
-            data-category="ev-power-tiller"
-            class="uk-width-1-4@m uk-margin-small-bottom"
-            style="width: 300px; height: 400px"
-          >
-            <a
-              href="../Agriculture/Products.html/EVPowerTiller.html"
-              class="uk-link-reset"
-            >
-              <div class="uk-card card-product">
-                <div class="uk-card-media-top">
-                  <picture>
-                    <img
-                      src="../../images/Motor for EV Power Tiller.webp"
-                      alt="img"
-                      width="300"
-                      height="200"
-                      class=""
-                    />
-                  </picture>
-                </div>
-                <div class="uk-card-body card-product-body">
-                  <p class="uk-margin-remove-bottom">
-                    <small>Motor for EV Power Tiller</small>
-                  </p>
-                  <small class="uk-text-muted uk-text-truncate-max3"
-                    >Our EV Power Tiller motor is designed for high torque,
-                    durability, and energy efficiency, making it ideal for
-                    agricultural and light industrial applications. Built with
-                    advanced brushless DC (BLDC) or permanent magnet synchronous
-                    motor (PMSM) technology, it delivers consistent performance
-                    even in demanding field conditions.</small
-                  >
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <!-- Motors for EV Veeder -->
-          <div
-            data-category="ev-veeder"
-            class="uk-width-1-4@m uk-margin-small-bottom"
-            style="width: 300px; height: 400px"
-          >
-            <a
-              href="../Agriculture/Products.html//EVVeeder.html"
-              class="uk-link-reset"
-            >
-              <div class="uk-card card-product">
-                <div class="uk-card-media-top">
-                  <picture>
-                    <img
-                      src="../../images/Motors for EV Veeder.webp"
-                      alt="img"
-                      width="300"
-                      height="200"
-                      class=""
-                    />
-                  </picture>
-                </div>
-                <div class="uk-card-body card-product-body">
-                  <p class="uk-margin-remove-bottom">
-                    <small>Motors for EV Veeder</small>
-                  </p>
-                  <small class="uk-text-muted uk-text-truncate-max3"
-                    >Our EV Weeder motors are engineered for precision,
-                    durability, and efficiency, enabling eco-friendly weed
-                    control in agricultural fields. Designed with advanced
-                    brushless DC (BLDC) or PMSM technology, these motors deliver
-                    the torque and reliability required for continuous outdoor
-                    operations.</small
-                  >
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <!-- Motors for Gross cutters -->
-          <div
-            data-category="gross-cutters"
-            class="uk-width-1-4@m uk-margin-small-bottom"
-            style="width: 300px; height: 400px"
-          >
-            <a
-              href="../Agriculture/Products.html/Grosscutters.html"
-              class="uk-link-reset"
-            >
-              <div class="uk-card card-product">
-                <div class="uk-card-media-top">
-                  <picture>
-                    <img
-                      src="../../images/Motors for Gross cutters.webp"
-                      alt="img"
-                      width="300"
-                      height="200"
-                      class=""
-                    />
-                  </picture>
-                </div>
-                <div class="uk-card-body card-product-body">
-                  <p class="uk-margin-remove-bottom">
-                    <small>Motors for Gross cutters</small>
-                  </p>
-                  <small class="uk-text-muted uk-text-truncate-max3"
-                    >Our motors for electric grass cutters are designed for high
-                    efficiency, reliability, and lightweight operation, making
-                    them ideal for both commercial landscaping and household
-                    lawn maintenance. Using advanced BLDC or PMSM technology,
-                    these motors deliver consistent cutting performance with
-                    minimal energy consumption.</small
-                  >
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <!-- EV tractors -->
-          <div
-            data-category="ev-tractors"
-            class="uk-width-1-4@m uk-margin-small-bottom"
-            style="width: 300px; height: 400px"
-          >
-            <a
-              href="../Agriculture/Products.html/EVtractors.html"
-              class="uk-link-reset"
-            >
-              <div class="uk-card card-product">
-                <div class="uk-card-media-top">
-                  <picture>
-                    <img
-                      src="../../images/EV tractors.webp"
-                      alt="img"
-                      width="300"
-                      height="200"
-                      class=""
-                    />
-                  </picture>
-                </div>
-                <div class="uk-card-body card-product-body">
-                  <p class="uk-margin-remove-bottom">
-                    <small>EV tractors</small>
-                  </p>
-                  <small class="uk-text-muted uk-text-truncate-max3"
-                    >Our EV tractor motors are built to deliver high torque,
-                    long operating life, and exceptional energy efficiency,
-                    making them ideal for modern, eco-friendly farming. Powered
-                    by advanced BLDC or PMSM technology, these motors provide
-                    reliable performance for a wide range of agricultural and
-                    utility tasks while reducing operating costs and
-                    emissions.</small
-                  >
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
+        </a>
       </div>
-    </section>
 
-    <a id="download"></a>
+      <!-- Solar AC Submersible Pump -->
+      <div class="product-card" data-category="solar-ac-pumps" style="width: 100%; max-width: 280px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+        <a href="../Agriculture/Products.html/SolarAcPumps/solarAcSubmerssible.html" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; flex: 1;">
+          <img src="../../images/dcsubmersible.webp" alt="Solar AC Submersible Pump" style="width: 100%; height: 180px; object-fit: cover;">
+        <div style="padding: 15px; display: flex; flex-direction: column; flex: 1;">
+  <h3 style="font-size: 16px; font-weight: bold; margin: 0 0 10px;">Solar AC Submersible Pump</h3>
+  <p style="font-size: 12px; color: #999; margin: 0;">Capacity: 2 HP to 300 HP</p>
+  <p style="font-size: 12px; color: #999; margin: 0;">Head Range: 30 m – 500 m</p>
+  <p style="font-size: 12px; color: #999; margin: 0;">Flow Range: 50 LPM – 5000 LPM</p>
+</div>
 
-    <!-- <section class="uk-section  ">
-        <div class="uk-container">
-            <div class="uk-width-3-5@m">
+        </a>
+      </div>
 
+      <!-- Solar AC Surface Pump -->
+      <div class="product-card" data-category="solar-ac-pumps" style="width: 100%; max-width: 280px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+        <a href="../Agriculture/Products.html/SolarAcPumps/solarAcSurface.html" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; flex: 1;">
+          <img src="../../images/dcsurface.webp" alt="Solar AC Surface Pump" style="width: 100%; height: 180px; object-fit: cover;">
+        <div style="padding: 15px; display: flex; flex-direction: column; flex: 1;">
+  <h3 style="font-size: 16px; font-weight: bold; margin: 0 0 10px;">Solar AC Surface Pump</h3>
+  <p style="font-size: 12px; color: #999; margin: 0;">Capacity: 1 HP to 50 HP</p>
+  <p style="font-size: 12px; color: #999; margin: 0;">Head Range: 10 m – 70 m</p>
+  <p style="font-size: 12px; color: #999; margin: 0;">Flow Range: 250 LPM – 5000 LPM</p>
+</div>
 
+        </a>
+      </div>
 
-                <p class="uk-text-lead">
-                    Downloads
-                </p>
+      <!-- Pump Controller -->
+      <div class="product-card" data-category="pump-controllers" style="width: 100%; max-width: 280px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+        <a href="../Agriculture/Products.html/pumpController.html" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; flex: 1;">
+          <img src="../../images/IOT Controller.webp" alt="Pump Controller" style="width: 100%; height: 180px; object-fit: cover;">
+        <div style="padding: 15px; display: flex; flex-direction: column; flex: 1;">
+  <h3 style="font-size: 16px; font-weight: bold; margin: 0 0 10px;">Pump Controller</h3>
+  <p style="font-size: 12px; color: #999; margin: 0;">Capacity: 0.75 kW to 275 kW</p>
+  <p style="font-size: 12px; color: #999; margin: 0;">Voltage Range: 50 V – 780 V</p>
+  <p style="font-size: 12px; color: #999; margin: 0;">Current Range: 8 A – 325 A</p>
+</div>
 
+        </a>
+      </div>
 
-                <form class="uk-form-stacked uk-margin-bottom">
-                    <div>
-                        <label class="uk-form-label">Category filter</label>
-                        <div class="uk-width" uk-form-custom="target: > .uk-button-group > button > span">
-                            <select aria-label="Categoria" data-filter-downloads>
-                                <option selected value="">All categories</option>
-                                <option value="catalogues">Catalogues</option>
-                                <option value="other-files">Other files</option>
-                            </select>
-                            <div class="uk-button-group uk-width">
-                                <button class="uk-button uk-button-default uk-flex-1 uk-text-left" type="button"
-                                    tabindex="-1">
-                                    <span></span>
-                                </button>
-                                <div class="uk-inline">
-                                    <button
-                                        class="uk-button uk-button-primary uk-padding-small uk-padding-remove-vertical"
-                                        type="button">
-                                        <span uk-icon="icon: triangle-down"></span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-
-                <div>
-
-
-
-                    <div class="uk-flex uk-flex-middle uk-card uk-card-light uk-grid-collapse uk-margin downloads-card"
-                        uk-grid data-download-category="catalogues">
-                        <div class="uk-card-media-left uk-cover-container uk-width-1-5@m uk-visible@m">
-                            <img width="162" height="162"
-                                src="../../../_default_upload_bucket/50937/image-thumb__50937__useful_document_preview/Logistics.jpg"
-                                alt="" uk-cover>
-                            <canvas width="162" height="162"></canvas>
-                        </div>
-                        <div class="uk-width-1-2@m uk-width">
-                            <div class="uk-card-body uk-padding-small">
-                                <p class="uk-text-black">
-                                    <span class="uk-text-secondary">Catalogues</span><br>
-                                    <strong>Brochure Solutions for Logistics &amp; Intralogistics</strong>
-                                </p>
-                                <ul class="">
-                                    <li>
-                                        <a data-documentlanguage="en" data-documentid="5993" data-uniquestring=""
-                                            href="https://www.bonfiglioli.com/_default_upload_bucket/BR_CAT_LOG_STD_ENG_R02_1_1.pdf"
-                                            target="_blank" class="documentDownloadLink">
-                                            EN
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a data-documentlanguage="it" data-documentid="5993" data-uniquestring=""
-                                            href="https://www.bonfiglioli.com/_default_upload_bucket/BR_CAT_LOG_STD_ITA_R01_0_2.pdf"
-                                            target="_blank" class="documentDownloadLink">
-                                            IT
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-
-                        <div class="uk-width-expand@m uk-width uk-padding-small uk-text-right@m">
-                            <a data-documentlanguage="" data-documentid="5993" data-uniquestring=""
-                                href="https://www.bonfiglioli.com/_default_upload_bucket/BR_CAT_LOG_STD_ENG_R02_1_1.pdf"
-                                class="documentDownloadLink uk-button uk-button--download uk-text-uppercase uk-text-bold uk-button-default uk-button-outline-secondary uk-width-auto@m"
-                                target="_blank">
-                                <span uk-icon="arrow-down"></span>
-                                Download
-                            </a>
-                        </div>
-                    </div>
+      <!-- Motor for EV Power Tiller -->
+      <div class="product-card" data-category="ev-power-tiller" style="width: 100%; max-width: 280px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+        <a href="../Agriculture/Products.html/EVPowerTiller.html" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; flex: 1;">
+          <img src="../../images/Motor for EV Power Tiller.webp" alt="Motor for EV Power Tiller" style="width: 100%; height: 180px; object-fit: cover;">
+          <div style="padding: 15px; display: flex; flex-direction: column; flex: 1;">
+            <h3 style="font-size: 16px; font-weight: bold; margin: 0 0 10px;">Motor for EV Power Tiller</h3>
+             <p style="font-size: 12px; color: #999; margin: 0;">Motor Capacity: 3 kW – 10 kW</p>
+      <p style="font-size: 12px; color: #999; margin: 0;">RPM: 3000 – 8000</p>
+      <p style="font-size: 12px; color: #999; margin: 0;">Torque: 12 Nm – 70 Nm</p>
+      <p style="font-size: 12px; color: #999; margin: 0;">Voltage: 48V / 60V / 72V / 96V</p>
+          </div>
+        </a>
+      </div>
 
 
 
-                    <div class="uk-flex uk-flex-middle uk-card uk-card-light uk-grid-collapse uk-margin downloads-card"
-                        uk-grid data-download-category="catalogues">
-                        <div class="uk-card-media-left uk-cover-container uk-width-1-5@m uk-visible@m">
-                            <img width="162" height="162"
-                                src="../../../_default_upload_bucket/53043/image-thumb__53043__useful_document_preview/copertina%20product%20range.png"
-                                alt="" uk-cover>
-                            <canvas width="162" height="162"></canvas>
-                        </div>
-                        <div class="uk-width-1-2@m uk-width">
-                            <div class="uk-card-body uk-padding-small">
-                                <p class="uk-text-black">
-                                    <span class="uk-text-secondary">Catalogues</span><br>
-                                    <strong>Product Range - I&amp;A</strong>
-                                </p>
-                                <ul class="">
-                                    <li>
-                                        <a data-documentlanguage="en" data-documentid="5987" data-uniquestring=""
-                                            href="https://www.bonfiglioli.com/international/usefulDocuments/BR_CAT_I%26A_STD_ENG_R01_0.pdf"
-                                            target="_blank" class="documentDownloadLink">
-                                            EN
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a data-documentlanguage="fr" data-documentid="5987" data-uniquestring=""
-                                            href="https://www.bonfiglioli.com/international/usefulDocuments/BR_CAT_I%26A_STD_FRA_R01_0.pdf"
-                                            target="_blank" class="documentDownloadLink">
-                                            FR
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a data-documentlanguage="de" data-documentid="5987" data-uniquestring=""
-                                            href="https://www.bonfiglioli.com/international/usefulDocuments/BR_CAT_I%26A_STD_DEU_R01_0.pdf"
-                                            target="_blank" class="documentDownloadLink">
-                                            DE
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+
+<!-- Motors for EV Weeder -->
+<div class="product-card" data-category="ev-veeder" style="width: 100%; max-width: 280px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+  <a href="../Agriculture/Products.html/EVVeedermotor.html" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; flex: 1;">
+    <img src="../../images/Motors for EV Veeder.webp" alt="Motors for EV Veeder" style="width: 100%; height: 180px; object-fit: cover;">
+    <div style="padding: 15px; display: flex; flex-direction: column; flex: 1;">
+      <h3 style="font-size: 16px; font-weight: bold; margin: 0 0 10px;">Motors for EV Weeder</h3>
+      <p style="font-size: 12px; color: #999; margin: 0;">Capacity: 1 kW – 3 kW</p>
+      <p style="font-size: 12px; color: #999; margin: 0;">RPM: 1500 – 4000</p>
+      <p style="font-size: 12px; color: #999; margin: 0;">Torque: 6 Nm – 20 Nm</p>
+      <p style="font-size: 12px; color: #999; margin: 0;">Voltage: 48V / 60V / 72V</p>
+    </div>
+  </a>
+</div>
 
 
-                        <div class="uk-width-expand@m uk-width uk-padding-small uk-text-right@m">
-                            <a data-documentlanguage="" data-documentid="5987" data-uniquestring=""
-                                href="https://www.bonfiglioli.com/international/usefulDocuments/BR_CAT_I%26A_STD_ENG_R01_0.pdf"
-                                class="documentDownloadLink uk-button uk-button--download uk-text-uppercase uk-text-bold uk-button-default uk-button-outline-secondary uk-width-auto@m"
-                                target="_blank">
-                                <span uk-icon="arrow-down"></span>
-                                Download
-                            </a>
-                        </div>
-                    </div>
+<!-- Motors for Grass Cutters -->
+<div class="product-card" data-category="gross-cutters" style="width: 100%; max-width: 280px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+  <a href="../Agriculture/Products.html/Grosscutters.html" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; flex: 1;">
+    <img src="../../images/Motors for Gross cutters.webp" alt="Motors for Grass Cutters" style="width: 100%; height: 180px; object-fit: cover;">
+    <div style="padding: 15px; display: flex; flex-direction: column; flex: 1;">
+      <h3 style="font-size: 16px; font-weight: bold; margin: 0 0 10px;">Motors for Grass Cutters</h3>
+      <p style="font-size: 12px; color: #999; margin: 0;">Capacity: 1 kW</p>
+      <p style="font-size: 12px; color: #999; margin: 0;">RPM: 3000 RPM</p>
+      <p style="font-size: 12px; color: #999; margin: 0;">Torque: 3 Nm – 4 Nm</p>
+      <p style="font-size: 12px; color: #999; margin: 0;">Motor Weight: 2 kg</p>
+    </div>
+  </a>
+</div>
 
 
 
-                    <div class="uk-flex uk-flex-middle uk-card uk-card-light uk-grid-collapse uk-margin downloads-card"
-                        uk-grid data-download-category="other-files">
-                        <div class="uk-card-media-left uk-cover-container uk-width-1-5@m uk-visible@m">
-                            <img width="162" height="162"
-                                src="../../../_default_upload_bucket/52133/image-thumb__52133__useful_document_preview/IOT_1.jpg"
-                                alt="" uk-cover>
-                            <canvas width="162" height="162"></canvas>
-                        </div>
-                        <div class="uk-width-1-2@m uk-width">
-                            <div class="uk-card-body uk-padding-small">
-                                <p class="uk-text-black">
-                                    <span class="uk-text-secondary">Other files</span><br>
-                                    <strong>Brochure IoT</strong>
-                                </p>
-                                <ul class="">
-                                    <li>
-                                        <a data-documentlanguage="en" data-documentid="112703" data-uniquestring=""
-                                            href="https://www.bonfiglioli.com/_default_upload_bucket/BR_CAT_IIOT_STD_ENG_R01_1_1.pdf"
-                                            target="_blank" class="documentDownloadLink">
-                                            EN
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a data-documentlanguage="it" data-documentid="112703" data-uniquestring=""
-                                            href="https://www.bonfiglioli.com/_default_upload_bucket/BR_CAT_IIOT_STD_ITA_R01_1_1.pdf"
-                                            target="_blank" class="documentDownloadLink">
-                                            IT
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
 
+      <!-- EV Tractors -->
+      <div class="product-card" data-category="ev-tractors" style="width: 100%; max-width: 280px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+        <a href="../Agriculture/Products.html/EVtractors.html" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; flex: 1;">
+          <img src="../../images/EV tractors.webp" alt="EV Tractors" style="width: 100%; height: 180px; object-fit: cover;">
+          <div style="padding: 15px; display: flex; flex-direction: column; flex: 1;">
+            <h3 style="font-size: 16px; font-weight: bold; margin: 0 0 10px;">EV Tractors</h3>
+            <p style="font-size: 12px; color: #999; margin: 0;">Type: BLDC/PMSM</p>
+            <p style="font-size: 12px; color: #999; margin: 0;">Power: Electric</p>
+            <p style="font-size: 12px; color: #999; margin: 0;">Applications: Farming, Utility</p>
+            <p style="font-size: 12px; color: #999; margin: 0;">Feature: Energy Efficient</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 
-                        <div class="uk-width-expand@m uk-width uk-padding-small uk-text-right@m">
-                            <a data-documentlanguage="" data-documentid="112703" data-uniquestring=""
-                                href="https://www.bonfiglioli.com/_default_upload_bucket/BR_CAT_IIOT_STD_ENG_R01_1_1.pdf"
-                                class="documentDownloadLink uk-button uk-button--download uk-text-uppercase uk-text-bold uk-button-default uk-button-outline-secondary uk-width-auto@m"
-                                target="_blank">
-                                <span uk-icon="arrow-down"></span>
-                                Download
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
+ 
+</section>
     <!-- /main-content -->
     <!--FOOTER-->
     <footer class="uk-section uk-section-small footer">
@@ -1908,6 +1449,55 @@
         "REQUEST_DOCUMENT_LOCALE": "en_IN"
       }
     </script>
+
+
+    <!-- JavaScript for Filtering -->
+  <script>
+    function filterProducts(category) {
+      const cards = document.querySelectorAll('.product-card');
+      const buttons = document.querySelectorAll('button[id^="filter-"]');
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      buttons.forEach(btn => {
+        btn.style.background = '#f0f0f0';
+        btn.style.color = 'black';
+      });
+      const activeButton = document.getElementById(`filter-${category}`);
+      activeButton.style.background = '#01305F';
+      activeButton.style.color = 'white';
+    }
+    // Show all products by default
+    filterProducts('all');
+  </script>
+
+  <!-- Responsive Styles -->
+  <style>
+    @media (min-width: 1024px) {
+      .product-card {
+        max-width: calc(25% - 15px); /* 4 cards per row with gap adjustment */
+      }
+    }
+    @media (max-width: 1023px) and (min-width: 768px) {
+      .product-card {
+        max-width: calc(33.33% - 13.33px); /* 3 cards per row */
+      }
+    }
+    @media (max-width: 767px) and (min-width: 480px) {
+      .product-card {
+        max-width: calc(50% - 10px); /* 2 cards per row */
+      }
+    }
+    @media (max-width: 479px) {
+      .product-card {
+        max-width: 100%; /* 1 card per row */
+      }
+    }
+  </style>
   </body>
 
   <!-- Mirrored from www.bonfiglioli.com/india/en/application-complex/access-aerial-platforms_access-platforms by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Aug 2025 07:18:17 GMT -->
