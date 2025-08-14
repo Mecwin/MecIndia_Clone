@@ -744,27 +744,55 @@
                             <!-- =========================== -->
 
 
+                            <style>
+                                /* Style for active button */
+                                .custom-switcher-button.uk-active {
+                                    background-color: #003861 !important;
+                                    color: #fff !important;
+                                }
+
+                                /* Add shadow to cards */
+                                .card-office {
+                                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                                    transition: box-shadow 0.3s ease;
+                                }
+
+                                .card-office:hover {
+                                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+                                }
+
+                                /* Ensure grid alignment */
+                                .uk-grid-match>* {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+
+                                .uk-grid-match .uk-card {
+                                    flex: 1;
+                                }
+                            </style>
+
                             <div class="uk-container">
                                 <div>
                                     <button
                                         class="uk-button uk-button-default custom-switcher-button uk-margin-small-right uk-margin-small-bottom uk-active"
-                                        type="button" data-toggle="#subsidiaries">Manufacturing Branches</button>
+                                        type="button" data-toggle="#subsidiaries">Manufacturing Plant</button>
                                     <button
                                         class="uk-button uk-button-default custom-switcher-button uk-margin-small-right uk-margin-small-bottom"
-                                        type="button" data-toggle="#local-office">Local office</button>
+                                        type="button" data-toggle="#local-office">Service Centers</button>
                                     <button
                                         class="uk-button uk-button-default custom-switcher-button uk-margin-small-right uk-margin-small-bottom"
                                         type="button" data-toggle="#regional-offices">Regional Offices</button>
                                 </div>
                                 <div class="custom-switcher-toggle" id="subsidiaries" style="display: block;">
                                     <div class="uk-section-small">
-                                        <div class="uk-text-large uk-text-secondary">Manufacturing Branches</div>
+                                        <div class="uk-text-large uk-text-secondary">Manufacturing Plant</div>
                                         <div class="uk-grid uk-grid-small uk-grid-match uk-child-width-1-4@l">
                                             <div class="uk-margin-top">
                                                 <div class="uk-card card-office">
                                                     <div class="uk-padding-small">
                                                         <div class="uk-text-primary uk-text-uppercase">
-                                                            <small>Subsidiaries</small>
+                                                            <small>Manufacturing Plant</small>
                                                         </div>
                                                         <div class="uk-text-secondary uk-text-default uk-text-bold">
                                                             Mecwin Technologies Pvt Ltd.
@@ -813,7 +841,7 @@
                                                 <div class="uk-card card-office">
                                                     <div class="uk-padding-small">
                                                         <div class="uk-text-primary uk-text-uppercase">
-                                                            <small>Subsidiaries</small>
+                                                            <small>Manufacturing Plant</small>
                                                         </div>
                                                         <div class="uk-text-secondary uk-text-default uk-text-bold">
                                                             Mecwin Green Propulsions Pvt Ltd.
@@ -863,7 +891,7 @@
                                                 <div class="uk-card card-office">
                                                     <div class="uk-padding-small">
                                                         <div class="uk-text-primary uk-text-uppercase">
-                                                            <small>Subsidiaries</small>
+                                                            <small>Manufacturing Plant</small>
                                                         </div>
                                                         <div class="uk-text-secondary uk-text-default uk-text-bold">
                                                             Mecwin Innovative Center Pvt Ltd.
@@ -913,13 +941,13 @@
                                 </div>
                                 <div class="custom-switcher-toggle" id="local-office" style="display: none;">
                                     <div class="uk-section-small">
-                                        <div class="uk-text-large uk-text-secondary">Local office</div>
+                                        <div class="uk-text-large uk-text-secondary">Service Centers</div>
                                         <div class="uk-grid uk-grid-small uk-grid-match uk-child-width-1-4@l">
                                             <div class="uk-margin-top">
                                                 <div class="uk-card card-office">
                                                     <div class="uk-padding-small">
                                                         <div class="uk-text-primary uk-text-uppercase">
-                                                            <small>Local office</small>
+                                                            <small>Service Center</small>
                                                         </div>
                                                         <div class="uk-text-secondary uk-text-default uk-text-bold">
                                                             Mecwin technologies pvt ltd <br> <b> Raipur </b>
@@ -965,7 +993,7 @@
                                                 <div class="uk-card card-office">
                                                     <div class="uk-padding-small">
                                                         <div class="uk-text-primary uk-text-uppercase">
-                                                            <small>Local office</small>
+                                                            <small>Service Center</small>
                                                         </div>
                                                         <div class="uk-text-secondary uk-text-default uk-text-bold">
                                                             Mecwin technologies Pvt Ltd <br> <b> Ranchi </b>
@@ -1011,7 +1039,7 @@
                                                 <div class="uk-card card-office">
                                                     <div class="uk-padding-small">
                                                         <div class="uk-text-primary uk-text-uppercase">
-                                                            <small>Local office</small>
+                                                            <small>Service Center</small>
                                                         </div>
                                                         <div class="uk-text-secondary uk-text-default uk-text-bold">
                                                             Mecwin Technologies<br> <b> Odisha </b>
@@ -1046,7 +1074,7 @@
                                                         <ul class="uk-list card-office-contact-list uk-overflow-hidden">
                                                             <li class="card-office-contact-phone">
                                                                 <i uk-icon="icon: receiver"></i>&nbsp;
-                                                                <a href="tel: +918260773652">+918260773652</a>
+                                                                <a href="tel: +918260773652">+91 8260773652</a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -1056,7 +1084,7 @@
                                                 <div class="uk-card card-office">
                                                     <div class="uk-padding-small">
                                                         <div class="uk-text-primary uk-text-uppercase">
-                                                            <small>Local office</small>
+                                                            <small>Service Center</small>
                                                         </div>
                                                         <div class="uk-text-secondary uk-text-default uk-text-bold">
                                                             Mecwin Technologies Pvt Ltd. <br> <b> Dhule </b>
@@ -1101,7 +1129,7 @@
                                                 <div class="uk-card card-office">
                                                     <div class="uk-padding-small">
                                                         <div class="uk-text-primary uk-text-uppercase">
-                                                            <small>Local office</small>
+                                                            <small>Service Center</small>
                                                         </div>
                                                         <div class="uk-text-secondary uk-text-default uk-text-bold">
                                                             Mecwin Technologies Pvt Ltd <br> <b> Jalna </b>
@@ -1146,7 +1174,7 @@
                                                 <div class="uk-card card-office">
                                                     <div class="uk-padding-small">
                                                         <div class="uk-text-primary uk-text-uppercase">
-                                                            <small>Local office</small>
+                                                            <small>Service Center</small>
                                                         </div>
                                                         <div class="uk-text-secondary uk-text-default uk-text-bold">
                                                             Mecwin Technologies <br> <b> Jaipur </b>
@@ -1181,7 +1209,7 @@
                                                         <ul class="uk-list card-office-contact-list uk-overflow-hidden">
                                                             <li class="card-office-contact-phone">
                                                                 <i uk-icon="icon: receiver"></i>&nbsp;
-                                                                <a href="tel: +917425040503">+917425040503</a>
+                                                                <a href="tel: +917425040503">+91 7425040503</a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -1191,10 +1219,10 @@
                                                 <div class="uk-card card-office">
                                                     <div class="uk-padding-small">
                                                         <div class="uk-text-primary uk-text-uppercase">
-                                                            <small>Local office</small>
+                                                            <small>Service Center</small>
                                                         </div>
                                                         <div class="uk-text-secondary uk-text-default uk-text-bold">
-                                                            Mecwin technologies Pvt Ltd <br> <b> Nagpur </b>
+                                                            Mecwin Technologies Pvt Ltd <br> <b> Nagpur </b>
                                                         </div>
                                                         <p><small>Plot no 82 Behind NMC school Unthkana Nagpur</small>
                                                         </p>
@@ -1236,7 +1264,7 @@
                                                 <div class="uk-card card-office">
                                                     <div class="uk-padding-small">
                                                         <div class="uk-text-primary uk-text-uppercase">
-                                                            <small>Local office</small>
+                                                            <small>Service Center</small>
                                                         </div>
                                                         <div class="uk-text-secondary uk-text-default uk-text-bold">
                                                             Mecwin Technologies Pvt Ltd <br> <b> Chattisgarh </b>
@@ -1265,7 +1293,7 @@
                                                         <ul class="uk-list card-office-contact-list uk-overflow-hidden">
                                                             <li class="card-office-contact-phone">
                                                                 <i uk-icon="icon: receiver"></i>&nbsp;
-                                                                <a href="tel: +919098374616">+919098374616</a>
+                                                                <a href="tel: +919098374616">+91 9098374616</a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -1637,116 +1665,109 @@
                                                             </button>
                                                         </div>
                                                         <ul class="uk-list card-office-contact-list uk-overflow-hidden">
-                                                            <li class="uk-text-right uk-hidden@m uk-margin-bottom">
-                                                                <button
-                                                                    class="uk-button uk-button-link card-contact-toggler"
-                                                                    data-show-label="Show contact"
-                                                                    data-hide-label="Hide contacts">
-                                                                    <span>Show contacts</span>
-                                                                    <i uk-icon="icon: chevron-down"></i>
-                                                                </button>
+                                                            <li class="card-office-contact-phone">
+                                                                <i uk-icon="icon: receiver"></i>&nbsp;
+                                                                <a href="tel: +91 7004896133">+91 7004896133</a>
+                                                            </li>
+                                                        </ul>
                                                     </div>
-                                                    <ul class="uk-list card-office-contact-list uk-overflow-hidden">
-                                                        <li class="card-office-contact-phone">
-                                                            <i uk-icon="icon: receiver"></i>&nbsp;
-                                                            <a href="tel: +91 7004896133">+91 7004896133</a>
-                                                        </li>
-                                                    </ul>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <!-- Odisha -->
-                                    <div class="uk-margin-top">
-                                        <div class="uk-card card-office">
-                                            <div class="uk-padding-small">
-                                                <div class="uk-text-primary uk-text-uppercase">
-                                                    <small>Regional Office - Odisha</small>
-                                                </div>
-                                                <div class="uk-text-secondary uk-text-default uk-text-bold">
-                                                    Mecwin Technologies <br> <b> Bhubaneswar </b>
-                                                </div>
-                                                <p><small>Plot no -289/3496, Amrit Nagar khandagiri bhuvneshwar odisha
-                                                        -751030</small></p>
-                                                <div>
-                                                    <small>
-                                                        <strong class="uk-text-uppercase">Function:</strong>
-                                                        Aftersales, Service
-                                                    </small>
-                                                </div>
-                                                <div>
-                                                    <small>
-                                                        <strong class="uk-text-uppercase">Sectors:</strong>
-                                                        Solar
-                                                    </small>
-                                                </div>
-                                            </div>
-                                            <hr />
-                                            <div
-                                                class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom">
-                                                <div class="uk-text-right uk-hidden@m uk-margin-bottom">
-                                                    <button class="uk-button uk-button-link card-contact-toggler"
-                                                        data-show-label="Show contact" data-hide-label="Hide contacts">
-                                                        <span>Show contacts</span>
-                                                        <i uk-icon="icon: chevron-down"></i>
-                                                    </button>
-                                                </div>
-                                                <ul class="uk-list card-office-contact-list uk-overflow-hidden">
-                                                    <li class="card-office-contact-phone">
-                                                        <i uk-icon="icon: receiver"></i>&nbsp;
-                                                        <a href="tel: +919606485938">+91 9606485938</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Guwahati -->
-                                    <div class="uk-margin-top">
-                                        <div class="uk-card card-office">
-                                            <div class="uk-padding-small">
-                                                <div class="uk-text-primary uk-text-uppercase">
-                                                    <small>Regional Office - Assam</small>
-                                                </div>
-                                                <div class="uk-text-secondary uk-text-default uk-text-bold">
-                                                    Mecwin Technologies <br> <b> Guwahati </b>
-                                                </div>
-                                                <p><small>Bonda, Chandrapur Rd., Amgaon, Mouza- Beltola, Guwahati,
-                                                        Assam-781026</small></p>
-                                                <div>
-                                                    <small>
-                                                        <strong class="uk-text-uppercase">Function:</strong>
-                                                        Sales
-                                                    </small>
-                                                </div>
-                                                <div>
-                                                    <small>
-                                                        <strong class="uk-text-uppercase">Sectors:</strong>
-                                                        Industrial Automation
-                                                    </small>
+                                            <!-- Odisha -->
+                                            <div class="uk-margin-top">
+                                                <div class="uk-card card-office">
+                                                    <div class="uk-padding-small">
+                                                        <div class="uk-text-primary uk-text-uppercase">
+                                                            <small>Regional Office - Odisha</small>
+                                                        </div>
+                                                        <div class="uk-text-secondary uk-text-default uk-text-bold">
+                                                            Mecwin Technologies <br> <b> Bhubaneswar </b>
+                                                        </div>
+                                                        <p><small>Plot no -289/3496, Amrit Nagar khandagiri bhuvneshwar
+                                                                odisha -751030</small></p>
+                                                        <div>
+                                                            <small>
+                                                                <strong class="uk-text-uppercase">Function:</strong>
+                                                                Aftersales, Service
+                                                            </small>
+                                                        </div>
+                                                        <div>
+                                                            <small>
+                                                                <strong class="uk-text-uppercase">Sectors:</strong>
+                                                                Solar
+                                                            </small>
+                                                        </div>
+                                                    </div>
+                                                    <hr />
+                                                    <div
+                                                        class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom">
+                                                        <div class="uk-text-right uk-hidden@m uk-margin-bottom">
+                                                            <button
+                                                                class="uk-button uk-button-link card-contact-toggler"
+                                                                data-show-label="Show contact"
+                                                                data-hide-label="Hide contacts">
+                                                                <span>Show contacts</span>
+                                                                <i uk-icon="icon: chevron-down"></i>
+                                                            </button>
+                                                        </div>
+                                                        <ul class="uk-list card-office-contact-list uk-overflow-hidden">
+                                                            <li class="card-office-contact-phone">
+                                                                <i uk-icon="icon: receiver"></i>&nbsp;
+                                                                <a href="tel: +919606485938">+91 9606485938</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <hr />
-                                            <div
-                                                class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom">
-                                                <div class="uk-text-right uk-hidden@m uk-margin-bottom">
-                                                    <button class="uk-button uk-button-link card-contact-toggler"
-                                                        data-show-label="Show contact" data-hide-label="Hide contacts">
-                                                        <span>Show contacts</span>
-                                                        <i uk-icon="icon: chevron-down"></i>
-                                                    </button>
+                                            <!-- Guwahati -->
+                                            <div class="uk-margin-top">
+                                                <div class="uk-card card-office">
+                                                    <div class="uk-padding-small">
+                                                        <div class="uk-text-primary uk-text-uppercase">
+                                                            <small>Regional Office - Assam</small>
+                                                        </div>
+                                                        <div class="uk-text-secondary uk-text-default uk-text-bold">
+                                                            Mecwin Technologies <br> <b> Guwahati </b>
+                                                        </div>
+                                                        <p><small>Bonda, Chandrapur Rd., Amgaon, Mouza- Beltola,
+                                                                Guwahati, Assam-781026</small></p>
+                                                        <div>
+                                                            <small>
+                                                                <strong class="uk-text-uppercase">Function:</strong>
+                                                                Sales
+                                                            </small>
+                                                        </div>
+                                                        <div>
+                                                            <small>
+                                                                <strong class="uk-text-uppercase">Sectors:</strong>
+                                                                Industrial Automation
+                                                            </small>
+                                                        </div>
+                                                    </div>
+                                                    <hr />
+                                                    <div
+                                                        class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom">
+                                                        <div class="uk-text-right uk-hidden@m uk-margin-bottom">
+                                                            <button
+                                                                class="uk-button uk-button-link card-contact-toggler"
+                                                                data-show-label="Show contact"
+                                                                data-hide-label="Hide contacts">
+                                                                <span>Show contacts</span>
+                                                                <i uk-icon="icon: chevron-down"></i>
+                                                            </button>
+                                                        </div>
+                                                        <ul class="uk-list card-office-contact-list uk-overflow-hidden">
+                                                            <li class="card-office-contact-phone">
+                                                                <i uk-icon="icon: receiver"></i>&nbsp;
+                                                                <a href="tel: +919008323993">+91 9008323993</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                                <ul class="uk-list card-office-contact-list uk-overflow-hidden">
-                                                    <li class="card-office-contact-phone">
-                                                        <i uk-icon="icon: receiver"></i>&nbsp;
-                                                        <a href="tel: +919008323993">+91 9008323993</a>
-                                                    </li>
-                                                </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            </div>
                             </div>
 
                             <script>
@@ -1987,6 +2008,5 @@
     </script>
 </body>
 
-<!-- Mirrored from www.bonfiglioli.com/india/en/company-contacts by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Aug 2025 06:20:14 GMT -->
 
 </html>
