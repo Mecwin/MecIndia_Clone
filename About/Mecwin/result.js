@@ -40,7 +40,7 @@ if (score >= 3) {
   progressCircle.style.stroke = "#22c55e";
   confetti();
 } else {
-  statusText.innerText = "❌ Oops! Try Again!";
+  statusText.innerText = "😞 Better Luck Next Time!";
   progressCircle.style.stroke = "#ef4444";
 }
 
