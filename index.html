@@ -523,11 +523,49 @@
         </div>
     </aside>
     <!-- main-content -->
-    <section class="hero">
-        <div class="uk-position-relative uk-visible-toggle hero-slideshow" tabindex="-1"
-            uk-slideshow="autoplay: true; autoplay-interval: 3000; pause-on-hover: false; finite: false; min-height: 600; max-height: 600; animation: push">
+    <style>
+#welcomeBanner {
+position: fixed;
+inset: 0;
+z-index: 9999;
+background: rgba(0, 0, 0, 0.7);
+display: flex;
+align-items: center;
+justify-content: center;
+transition: opacity 0.4s ease, transform 0.4s ease;
+}
 
-            <ul class="uk-slideshow-items">
+
+#welcomeBanner.hide {
+opacity: 0;
+transform: translateY(-30px);
+pointer-events: none;
+}
+
+
+#welcomeBanner img {
+max-width: 90%;
+max-height: 90%;
+cursor: pointer;
+border-radius: 12px;
+}
+</style>
+
+
+<!-- ================== WELCOME BANNER ================== -->
+<div id="welcomeBanner">
+<!-- 🔴 REPLACE THIS IMAGE WITH YOUR BANNER IMAGE -->
+<img src="./images/HomePageSlideImages/EV Expo Invitation Card - Rev 002.png" alt="Welcome Banner">
+</div>
+
+
+<!-- ================== YOUR HERO CODE (UNCHANGED) ================== -->
+<section class="hero">
+<div class="uk-position-relative uk-visible-toggle hero-slideshow" tabindex="-1"
+uk-slideshow="autoplay: true; autoplay-interval: 3000; pause-on-hover: false; finite: false; min-height: 600; max-height: 600; animation: push">
+
+
+<ul class="uk-slideshow-items">
 
                 <!-- EV Motors -->
                 <li>
@@ -697,6 +735,36 @@
             </div>
         </div>
     </section>
+    <script>
+const banner = document.getElementById("welcomeBanner");
+
+
+// Click to close
+banner.addEventListener("click", () => {
+banner.classList.add("hide");
+});
+
+
+// Swipe to close (mobile)
+let startX = 0, startY = 0;
+
+
+banner.addEventListener("touchstart", e => {
+startX = e.touches[0].clientX;
+startY = e.touches[0].clientY;
+});
+
+
+banner.addEventListener("touchend", e => {
+const endX = e.changedTouches[0].clientX;
+const endY = e.changedTouches[0].clientY;
+
+
+if ((endY - startY) < -50 || (endX - startX) < -50) {
+banner.classList.add("hide");
+}
+});
+</script>
 
 
     <section class="uk-section  ">
