@@ -2,34 +2,168 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MECWIN Quiz</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1467f7, #5e95f2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 24px 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 12px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #f2f4f8;
+      color: #333;
+      font-size: 13px;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: 22px;
+      color: #222;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 22px;
+    }
+
+    .field {
+      text-align: left;
+      margin-bottom: 16px;
+    }
+
+    label {
+      font-size: 13px;
+      font-weight: 600;
+      color: #444;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px 12px;
+      font-size: 15px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      outline: none;
+      transition: border 0.3s, box-shadow 0.3s;
+    }
+
+    input:focus {
+      border-color: #1467f7;
+      box-shadow: 0 0 0 2px rgba(255, 122, 24, 0.2);
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #1467f7, #76adf5);
+      color: white;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(58, 57, 100, 0.4);
+    }
+
+    .info {
+      font-size: 12px;
+      color: #666;
+      margin-top: 18px;
+      line-height: 1.4;
+    }
+
+    @media (min-width: 768px) {
+      .card {
+        padding: 32px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+
   <div class="container">
-    <img src="mecwinlogo.jpeg" class="logo" />
+    <div class="card">
 
-    <div class="badge">⏱ 5 Questions • 2 Minutes</div>
+      <img src="mecwinlogo.jpeg" class="logo" alt="MECWIN Logo" />
 
-    <h1>Join Quiz</h1>
-    <p class="subtitle">Enter your details to get started</p>
+      <div class="badge">⏱ 5 Questions • 2 Minutes</div>
 
-    <form id="startForm">
-      <label>Name</label>
-      <input type="text" id="name" placeholder="Enter your full name" required />
+      <h1>Join Quiz</h1>
+      <p class="subtitle">Enter your details to get started</p>
 
-      <label>Phone </label>
-      <input type="tel" id="email" placeholder="Enter your 10 digit phone number" required />
+      <form id="startForm">
+        <div class="field">
+          <label>Name</label>
+          <input type="text" id="name" placeholder="Enter your full name" required />
+        </div>
 
-      <button type="submit">Start Quiz</button>
-    </form>
+        <div class="field">
+          <label>Phone</label>
+          <input type="tel" id="email" placeholder="Enter your 10 digit phone number" required />
+        </div>
 
-    <div class="info">
-      ℹ Your phone number will be used to track participation.
-      You can only take the quiz once.
+        <button type="submit">Start Quiz</button>
+      </form>
+
+      <div class="info">
+        ℹ Your phone number will be used to track participation.
+        You can only take the quiz once.
+      </div>
+
     </div>
   </div>
 
+  <!-- Your existing JS remains unchanged -->
   <script type="module" src="start.js"></script>
+
 </body>
 </html>
