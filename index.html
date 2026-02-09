@@ -70,16 +70,9 @@
                             CSR Activities
                         </a>
                     </li>
-                    <li>
-                        <a class='uk-text-bold' href="./About/Mecwin/Facilities & testing.html" target="">
-                            Facilities & Testing
-                        </a>
-                    </li>
                 </ul>
             </div>
-            
         </div>
-        
 
         <div class="uk-navbar-right">
             <div class="uk-navbar-item change-region uk-visible@m"></div>
@@ -243,27 +236,6 @@
             </div>
         </div>
 
-        <!-- Facilities & Testing Menu -->
-        <div tabindex="0" class="mega-menu company-menu link_5026 focusable">
-            <div class="uk-align-center uk-container uk-padding uk-padding-remove-bottom">
-                <div class="mega-menu-primary">
-                    <div class="uk-flex-between uk-flex-middle uk-margin-bottom" uk-grid>
-                        <div>
-                            <div class="uk-text-large">Facilities & Testing</div>
-                        </div>
-                    </div>
-                    <div class="uk-card">
-                        <div class="mega-menu-submenu-summary">
-                            <p>Facilities & Testing</p>
-                            <a href="./About/Mecwin/Facilities & testing.html">
-                                <span uk-icon="icon: chevron-right"></span> Overview
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 </header>
 
@@ -302,11 +274,6 @@
                         <li>
                             <a class='uk-text-bold' href="./About/Mecwin/CsrActivities.html" target="">
                                 CSR Activities
-                            </a>
-                        </li>
-                        <li>
-                            <a class='uk-text-bold' href="./About/Mecwin/Facilities & testing.html" target="">
-                                Facilities & Testing
                             </a>
                         </li>
                     </ul>
@@ -514,58 +481,16 @@
                 <div class="uk-text-large uk-text-secondary uk-padding-small subnav-mobile-menu-title">
                     CSR Activities
                 </div>
-            <div class="subnav-mobile-menu">
-                <div class="uk-text-large uk-text-secondary uk-padding-small subnav-mobile-menu-title">
-                    Facilities & Testing
-                </div>
 
             </div>
         </div>
     </aside>
     <!-- main-content -->
-    <style>
-#welcomeBanner {
-position: fixed;
-inset: 0;
-z-index: 9999;
-background: rgba(0, 0, 0, 0.7);
-display: flex;
-align-items: center;
-justify-content: center;
-transition: opacity 0.4s ease, transform 0.4s ease;
-}
+    <section class="hero">
+        <div class="uk-position-relative uk-visible-toggle hero-slideshow" tabindex="-1"
+            uk-slideshow="autoplay: true; autoplay-interval: 3000; pause-on-hover: false; finite: false; min-height: 600; max-height: 600; animation: push">
 
-
-#welcomeBanner.hide {
-opacity: 0;
-transform: translateY(-30px);
-pointer-events: none;
-}
-
-
-#welcomeBanner img {
-max-width: 90%;
-max-height: 90%;
-cursor: pointer;
-border-radius: 12px;
-}
-</style>
-
-
-<!-- ================== WELCOME BANNER ================== -->
-<div id="welcomeBanner">
-<!-- 🔴 REPLACE THIS IMAGE WITH YOUR BANNER IMAGE -->
-<img src="./images/HomePageSlideImages/EV Expo Invitation Card - Rev 002.png" alt="Welcome Banner">
-</div>
-
-
-<!-- ================== YOUR HERO CODE (UNCHANGED) ================== -->
-<section class="hero">
-<div class="uk-position-relative uk-visible-toggle hero-slideshow" tabindex="-1"
-uk-slideshow="autoplay: true; autoplay-interval: 3000; pause-on-hover: false; finite: false; min-height: 600; max-height: 600; animation: push">
-
-
-<ul class="uk-slideshow-items">
+            <ul class="uk-slideshow-items">
 
                 <!-- EV Motors -->
                 <li>
@@ -735,36 +660,6 @@ uk-slideshow="autoplay: true; autoplay-interval: 3000; pause-on-hover: false; fi
             </div>
         </div>
     </section>
-    <script>
-const banner = document.getElementById("welcomeBanner");
-
-
-// Click to close
-banner.addEventListener("click", () => {
-banner.classList.add("hide");
-});
-
-
-// Swipe to close (mobile)
-let startX = 0, startY = 0;
-
-
-banner.addEventListener("touchstart", e => {
-startX = e.touches[0].clientX;
-startY = e.touches[0].clientY;
-});
-
-
-banner.addEventListener("touchend", e => {
-const endX = e.changedTouches[0].clientX;
-const endY = e.changedTouches[0].clientY;
-
-
-if ((endY - startY) < -50 || (endX - startX) < -50) {
-banner.classList.add("hide");
-}
-});
-</script>
 
 
     <section class="uk-section  ">
