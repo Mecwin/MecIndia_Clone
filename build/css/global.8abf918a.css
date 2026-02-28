@@ -616,39 +616,6 @@ button.swiper-pagination-bullet {
   overflow: hidden;
   transform-origin: center bottom;
 }
-@font-face {
-  font-display: swap;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 300;
-  src: local(""),
-    url(https://www.bonfiglioli.com/build/fonts/open-sans-v26-latin-300.b959cf97.woff2)
-      format("woff2"),
-    url(https://www.bonfiglioli.com/build/fonts/open-sans-v26-latin-300.ed9701c7.woff)
-      format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 400;
-  src: local(""),
-    url(https://www.bonfiglioli.com/build/fonts/open-sans-v26-latin-regular.36a546a9.woff2)
-      format("woff2"),
-    url(https://www.bonfiglioli.com/build/fonts/open-sans-v26-latin-regular.859af79d.woff)
-      format("woff");
-}
-@font-face {
-  font-display: swap;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 700;
-  src: local(""),
-    url(https://www.bonfiglioli.com/build/fonts/open-sans-v26-latin-700.05e19c4a.woff2)
-      format("woff2"),
-    url(https://www.bonfiglioli.com/build/fonts/open-sans-v26-latin-700.3036c40d.woff)
-      format("woff");
-}
 body,
 html {
   overflow-x: hidden;
