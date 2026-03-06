@@ -14,9 +14,7 @@
       content="Mecwin designs and manufactures motors, pumps, controllers, and IoT solutions for agriculture, electric mobility, industrial automation, and renewable energy applications across India."
     />
 
-    <!-- ✅ Use ONE clean URL for this page everywhere -->
     <link rel="canonical" href="./facilities-and-testing.html" />
-
     <link rel="shortcut icon" type="image/x-icon" href="../../images/favicon_io/favicon-32x32.png" />
 
     <meta name="dynamic-search:page-id" content="2192" />
@@ -59,7 +57,7 @@
       })(window, document, "script", "dataLayer", "GTM-KPDXMPG6");
     </script>
 
-    <!-- ✅ FIX: reCAPTCHA must be absolute https:// -->
+    <!-- Fixed reCAPTCHA -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!-- Sleeknote -->
@@ -95,6 +93,7 @@
             event.preventDefault();
             var query = (input.value || "").trim();
             if (!query) return;
+
             window.open(
               "https://www.mecwinstore.com/search-products?q=" + encodeURIComponent(query),
               "_blank",
@@ -125,7 +124,7 @@
       ></iframe>
     </noscript>
 
-    <!-- DESKTOP -->
+    <!-- DESKTOP HEADER -->
     <header class="nav-header nav-header--white" id="top">
       <div class="nav-header-top uk-navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
         <div class="uk-navbar-left"></div>
@@ -173,7 +172,7 @@
               <li>
                 <button
                   class="open-mega-menu unstyled uk-text-bold"
-                  data-title="link_2208"
+                  data-title="company-menu"
                   tabindex="0"
                   aria-expanded="false"
                   data-focus
@@ -187,14 +186,12 @@
                 <a class="uk-text-bold" href="../../About/Mecwin/CsrActivities.html">CSR Activities</a>
               </li>
 
-              <!-- ✅ FIX: Use clean file name -->
               <li>
                 <a class="uk-text-bold" href="../../About/Mecwin/facilities-and-testing.html">
                   Facilities &amp; Testing
                 </a>
               </li>
 
-              <!-- ✅ FIX: Use Blogs.html (NOT /Blog/index.html) -->
               <li>
                 <a class="uk-text-bold" href="../../About/Mecwin/Blogs.html">Blogs</a>
               </li>
@@ -204,13 +201,27 @@
 
                 <form
                   id="storeSearchForm"
-                  style="display: flex; align-items: center; border: 1px solid #0b3c60; border-radius: 20px; overflow: hidden; margin-right: 15px"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid #0b3c60;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    margin-right: 15px;
+                  "
                 >
                   <input
                     type="text"
                     id="storeSearchInput"
                     placeholder="Search motors, pumps..."
-                    style="border: none; outline: none; padding: 5px 12px; font-size: 13px; width: 200px; color: #333"
+                    style="
+                      border: none;
+                      outline: none;
+                      padding: 5px 12px;
+                      font-size: 13px;
+                      width: 200px;
+                      color: #333;
+                    "
                     autocomplete="off"
                     inputmode="search"
                     aria-label="Search Mecwin Store"
@@ -218,7 +229,14 @@
                   <button
                     type="submit"
                     aria-label="Search Mecwin Store"
-                    style="background: #0b3c60; border: none; padding: 6px 12px; cursor: pointer; display: flex; align-items: center"
+                    style="
+                      background: #0b3c60;
+                      border: none;
+                      padding: 6px 12px;
+                      cursor: pointer;
+                      display: flex;
+                      align-items: center;
+                    "
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -244,7 +262,16 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Mecwin Store"
-                  style="display: flex; align-items: center; gap: 6px; padding: 0 15px; color: #0b3c60; text-decoration: none; font-weight: 600; font-size: 14px"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    padding: 0 15px;
+                    color: #0b3c60;
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 14px;
+                  "
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -279,7 +306,7 @@
         </a>
       </nav>
 
-      <!-- Megamenu -->
+      <!-- DESKTOP MEGAMENU -->
       <div class="fixed-dropdown">
         <!-- Markets -->
         <div tabindex="0" class="mega-menu company-menu markets-menu focusable">
@@ -416,7 +443,7 @@
         </div>
 
         <!-- Company -->
-        <div tabindex="0" class="mega-menu company-menu link_2208 focusable">
+        <div tabindex="0" class="mega-menu company-menu company-menu focusable">
           <div class="uk-align-center uk-container uk-padding uk-padding-remove-bottom">
             <div class="mega-menu-primary">
               <div class="uk-flex-between uk-flex-middle uk-margin-bottom" uk-grid>
@@ -436,74 +463,9 @@
             </div>
           </div>
         </div>
-
-        <!-- CSR Activities -->
-        <div tabindex="0" class="mega-menu company-menu link_5026 focusable">
-          <div class="uk-align-center uk-container uk-padding uk-padding-remove-bottom">
-            <div class="mega-menu-primary">
-              <div class="uk-flex-between uk-flex-middle uk-margin-bottom" uk-grid>
-                <div><div class="uk-text-large">CSR Activities</div></div>
-              </div>
-
-              <div class="uk-card">
-                <div class="mega-menu-submenu-summary">
-                  <p>CSR Activities</p>
-                  <a href="../../About/Mecwin/CsrActivities.html">
-                    <span uk-icon="icon: chevron-right"></span> Overview
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Facilities & Testing -->
-        <div tabindex="0" class="mega-menu company-menu link_5026 focusable">
-          <div class="uk-align-center uk-container uk-padding uk-padding-remove-bottom">
-            <div class="mega-menu-primary">
-              <div class="uk-flex-between uk-flex-middle uk-margin-bottom" uk-grid>
-                <div><div class="uk-text-large">Facilities &amp; Testing</div></div>
-              </div>
-
-              <div class="uk-card">
-                <div class="mega-menu-submenu-summary">
-                  <p>Facilities &amp; Testing</p>
-                  <a href="../../About/Mecwin/facilities-and-testing.html">
-                    <span uk-icon="icon: chevron-right"></span> Overview
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Blogs -->
-        <div tabindex="0" class="mega-menu company-menu link_5026 focusable">
-          <div class="uk-align-center uk-container uk-padding uk-padding-remove-bottom">
-            <div class="mega-menu-primary">
-              <div class="uk-flex-between uk-flex-middle uk-margin-bottom" uk-grid>
-                <div><div class="uk-text-large">Blogs</div></div>
-              </div>
-
-              <div class="uk-card">
-                <div class="mega-menu-submenu-summary">
-                  <p>Blogs</p>
-                  <a href="../../About/Mecwin/Blogs.html">
-                    <span uk-icon="icon: chevron-right"></span> Overview
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ✅ IMPORTANT: Removed broken links
-             - ../../About/Mecwin/Usermanual/index.html
-             - ../../About/Mecwin/Blog/index.html
-             If you have correct URLs, tell me and I will add them back. -->
       </div>
     </header>
-    <!-- /DESKTOP -->
+    <!-- /DESKTOP HEADER -->
 
     <!-- MOBILE -->
     <aside class="nav-mobile" id="offcanvas-nav-primary" uk-offcanvas="flip: true; overlay: true">
@@ -524,8 +486,16 @@
 
           <div class="nav-mobile-middle">
             <ul class="uk-list nav-mobile-menu nav-mobile-menu--arrow">
-              <li><button data-uk-toggle="target: #markets-menu" class="unstyled" type="button">Products &amp; Solutions</button></li>
-              <li><button data-uk-toggle="target: #link_2208" class="unstyled" type="button">Company</button></li>
+              <li>
+                <button data-uk-toggle="target: #markets-menu" class="unstyled" type="button">
+                  Products &amp; Solutions
+                </button>
+              </li>
+              <li>
+                <button data-uk-toggle="target: #company-mobile-menu" class="unstyled" type="button">
+                  Company
+                </button>
+              </li>
               <li><a class="uk-text-bold" href="../../About/Mecwin/CsrActivities.html">CSR Activities</a></li>
               <li><a class="uk-text-bold" href="../../About/Mecwin/facilities-and-testing.html">Facilities &amp; Testing</a></li>
               <li><a class="uk-text-bold" href="../../About/Mecwin/Blogs.html">Blogs</a></li>
@@ -546,7 +516,9 @@
       <div class="uk-offcanvas-bar uk-offcanvas-bar--expand">
         <div class="uk-position-relative subnav-mobile-top" uk-grid>
           <div class="uk-width-3-4">
-            <a href="#" data-uk-toggle="target: #offcanvas-nav-primary"><span uk-icon="icon: chevron-left"></span> Menu</a>
+            <a href="#" data-uk-toggle="target: #offcanvas-nav-primary">
+              <span uk-icon="icon: chevron-left"></span> Menu
+            </a>
           </div>
           <div class="uk-width-auto">
             <button class="uk-offcanvas-close" type="button" uk-close></button>
@@ -559,55 +531,91 @@
           <ul class="uk-list nav-mobile-menu nav-mobile-menu--arrow">
             <li>
               <a href="../../ProductCatagory/Agriculture/index.html">
-                <img src="../../images/ICONS/agriculture.png" alt="Agriculture Icon" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 5px" />
+                <img
+                  src="../../images/ICONS/agriculture.png"
+                  alt="Agriculture Icon"
+                  style="width: 25px; height: 25px; vertical-align: middle; margin-right: 5px"
+                />
                 Agricultures
               </a>
             </li>
             <li>
               <a href="../../ProductCatagory/MaterialHandling/index.html">
-                <img src="../../images/ICONS/cargo-handling.png" alt="Material Handling Icon" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 5px" />
+                <img
+                  src="../../images/ICONS/cargo-handling.png"
+                  alt="Material Handling Icon"
+                  style="width: 25px; height: 25px; vertical-align: middle; margin-right: 5px"
+                />
                 Material Handling &amp; Industrial Automation
               </a>
             </li>
             <li>
               <a href="../../ProductCatagory/Automotive/index.html">
-                <img src="../../images/ICONS/robotic-process-automation.png" alt="Automotive Icon" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 5px" />
+                <img
+                  src="../../images/ICONS/robotic-process-automation.png"
+                  alt="Automotive Icon"
+                  style="width: 25px; height: 25px; vertical-align: middle; margin-right: 5px"
+                />
                 Automotive
               </a>
             </li>
             <li>
               <a href="../../ProductCatagory/AerospaceDefence/index.html">
-                <img src="../../images/ICONS/aerospace-engineering.png" alt="Aerospace and Defense Motors Icon" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 5px" />
+                <img
+                  src="../../images/ICONS/aerospace-engineering.png"
+                  alt="Aerospace and Defense Motors Icon"
+                  style="width: 25px; height: 25px; vertical-align: middle; margin-right: 5px"
+                />
                 Aerospace and Defence Motors
               </a>
             </li>
             <li>
               <a href="../../ProductCatagory/Drone/index.html">
-                <img src="../../images/ICONS/drone.png" alt="Drone Motors Icon" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 5px" />
+                <img
+                  src="../../images/ICONS/drone.png"
+                  alt="Drone Motors Icon"
+                  style="width: 25px; height: 25px; vertical-align: middle; margin-right: 5px"
+                />
                 Drone Motors
               </a>
             </li>
             <li>
               <a href="../../ProductCatagory/Medical/index.html">
-                <img src="../../images/ICONS/protection.png" alt="Medical Icon" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 5px" />
+                <img
+                  src="../../images/ICONS/protection.png"
+                  alt="Medical Icon"
+                  style="width: 25px; height: 25px; vertical-align: middle; margin-right: 5px"
+                />
                 Medical
               </a>
             </li>
             <li>
               <a href="../../ProductCatagory/HomeAppliances/index.html">
-                <img src="../../images/ICONS/washing-machine.png" alt="Home Appliances Icon" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 5px" />
+                <img
+                  src="../../images/ICONS/washing-machine.png"
+                  alt="Home Appliances Icon"
+                  style="width: 25px; height: 25px; vertical-align: middle; margin-right: 5px"
+                />
                 Home Appliances
               </a>
             </li>
             <li>
               <a href="../../ProductCatagory/WiringHarness/index.html">
-                <img src="../../images/ICONS/wire.png" alt="Wiring Harness Icon" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 5px" />
+                <img
+                  src="../../images/ICONS/wire.png"
+                  alt="Wiring Harness Icon"
+                  style="width: 25px; height: 25px; vertical-align: middle; margin-right: 5px"
+                />
                 Wiring Harness
               </a>
             </li>
             <li>
               <a href="../../ProductCatagory/IoT/index.html">
-                <img src="../../images/ICONS/internet-of-things.png" alt="IoT Icon" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 5px" />
+                <img
+                  src="../../images/ICONS/internet-of-things.png"
+                  alt="IoT Icon"
+                  style="width: 25px; height: 25px; vertical-align: middle; margin-right: 5px"
+                />
                 IoT
               </a>
             </li>
@@ -616,11 +624,13 @@
       </div>
     </aside>
 
-    <aside class="nav-mobile subnav-mobile" id="link_2208" uk-offcanvas="flip: true; overlay: true">
+    <aside class="nav-mobile subnav-mobile" id="company-mobile-menu" uk-offcanvas="flip: true; overlay: true">
       <div class="uk-offcanvas-bar uk-offcanvas-bar--expand">
         <div class="uk-position-relative subnav-mobile-top" uk-grid>
           <div class="uk-width-3-4">
-            <a href="#" data-uk-toggle="target: #offcanvas-nav-primary"><span uk-icon="icon: chevron-left"></span> Menu</a>
+            <a href="#" data-uk-toggle="target: #offcanvas-nav-primary">
+              <span uk-icon="icon: chevron-left"></span> Menu
+            </a>
           </div>
           <div class="uk-width-auto">
             <button class="uk-offcanvas-close" type="button" uk-close></button>
@@ -634,58 +644,6 @@
             <li><a href="../../contact/company-contacts.html">Contacts</a></li>
             <li><a href="../../About/Mecwin/Warranty.html">Warranty Terms and Conditions</a></li>
           </ul>
-        </div>
-      </div>
-    </aside>
-
-    <aside class="nav-mobile subnav-mobile" id="link_4642" uk-offcanvas="flip: true; overlay: true">
-      <div class="uk-offcanvas-bar uk-offcanvas-bar--expand">
-        <div class="uk-position-relative subnav-mobile-top" uk-grid>
-          <div class="uk-width-3-4">
-            <a href="#" data-uk-toggle="target: #offcanvas-nav-primary"><span uk-icon="icon: chevron-left"></span> Menu</a>
-          </div>
-          <div class="uk-width-auto">
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-          </div>
-        </div>
-        <div class="subnav-mobile-menu">
-          <div class="uk-text-large uk-text-secondary uk-padding-small subnav-mobile-menu-title">Service</div>
-        </div>
-      </div>
-    </aside>
-
-    <aside class="nav-mobile subnav-mobile" id="link_4991" uk-offcanvas="flip: true; overlay: true">
-      <div class="uk-offcanvas-bar uk-offcanvas-bar--expand">
-        <div class="uk-position-relative subnav-mobile-top" uk-grid>
-          <div class="uk-width-3-4">
-            <a href="#" data-uk-toggle="target: #offcanvas-nav-primary"><span uk-icon="icon: chevron-left"></span> Menu</a>
-          </div>
-          <div class="uk-width-auto">
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-          </div>
-        </div>
-      </div>
-    </aside>
-
-    <aside class="nav-mobile subnav-mobile" id="link_5026" uk-offcanvas="flip: true; overlay: true">
-      <div class="uk-offcanvas-bar uk-offcanvas-bar--expand">
-        <div class="uk-position-relative subnav-mobile-top" uk-grid>
-          <div class="uk-width-3-4">
-            <a href="#" data-uk-toggle="target: #offcanvas-nav-primary"><span uk-icon="icon: chevron-left"></span> Menu</a>
-          </div>
-          <div class="uk-width-auto">
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-          </div>
-        </div>
-
-        <div class="subnav-mobile-menu">
-          <div class="uk-text-large uk-text-secondary uk-padding-small subnav-mobile-menu-title">Blogs</div>
-        </div>
-        <div class="subnav-mobile-menu">
-          <div class="uk-text-large uk-text-secondary uk-padding-small subnav-mobile-menu-title">CSR Activities</div>
-        </div>
-        <div class="subnav-mobile-menu">
-          <div class="uk-text-large uk-text-secondary uk-padding-small subnav-mobile-menu-title">Facilities &amp; Testing</div>
         </div>
       </div>
     </aside>
@@ -897,7 +855,9 @@
             <!-- TAB 3 -->
             <li>
               <div class="uk-section-small uk-padding-remove">
-                <h3 class="uk-text-primary uk-text-bold uk-margin-small-bottom">Electromagnetic Design &amp; Simulation</h3>
+                <h3 class="uk-text-primary uk-text-bold uk-margin-small-bottom">
+                  Electromagnetic Design &amp; Simulation
+                </h3>
 
                 <div class="uk-grid-small uk-child-width-1-5@m uk-child-width-1-3@s uk-text-center" uk-grid>
                   <div><img src="../../images/AS5.png" alt="Simcenter Motorsolve" loading="lazy" decoding="async" /></div>
@@ -919,7 +879,9 @@
 
                 <hr class="uk-margin-medium" />
 
-                <h3 class="uk-text-primary uk-text-bold uk-margin-small-bottom">ERP &amp; Production Management Software</h3>
+                <h3 class="uk-text-primary uk-text-bold uk-margin-small-bottom">
+                  ERP &amp; Production Management Software
+                </h3>
 
                 <div class="uk-grid-small uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center" uk-grid>
                   <div><img src="../../images/AS10.png" alt="SAP" loading="lazy" decoding="async" /></div>
@@ -943,14 +905,15 @@
 
             <address class="uk-margin-remove">
               <p>
-                <span style="font-size: 11px">65/3-1, Industrial Suburb, Yeswanthpur, Bengaluru, Karnataka 560022 - India</span
-                ><br />
+                <span style="font-size: 11px">
+                  65/3-1, Industrial Suburb, Yeswanthpur, Bengaluru, Karnataka 560022 - India
+                </span><br />
                 <span style="font-size: 11px"><strong>FUNCTION</strong>: Manufacturing, Sales</span><br />
-                <span style="font-size: 11px"
-                  ><strong>BUSINESS AREA</strong>: Pump Application & Aerospace Defence motors<br />
+                <span style="font-size: 11px">
+                  <strong>BUSINESS AREA</strong>: Pump Application &amp; Aerospace Defence motors<br />
                   Ph: +91 97412 29797<br />
-                  Email: <a href="mailto:csr@mecwinindia.com">csr@mecwinindia.com</a></span
-                >
+                  Email: <a href="mailto:csr@mecwinindia.com">csr@mecwinindia.com</a>
+                </span>
               </p>
             </address>
 
@@ -1005,16 +968,15 @@
 
             <address class="uk-margin-remove">
               <p>
-                <span style="font-size: 11px"
-                  >478/479, Magadi Main Rd, Srigandhada Kaval, Chandana Layout, Sunkadakatte, Bengaluru, Karnataka 560091 -
-                  India</span
-                ><br />
+                <span style="font-size: 11px">
+                  478/479, Magadi Main Rd, Srigandhada Kaval, Chandana Layout, Sunkadakatte, Bengaluru, Karnataka 560091 - India
+                </span><br />
                 <span style="font-size: 11px"><strong>FUNCTION</strong>: Aftersales, Assembly, Manufacturing, Sales</span><br />
-                <span style="font-size: 11px"
-                  ><strong>BUSINESS AREA</strong>: EV Motors & Industrial motors<br />
+                <span style="font-size: 11px">
+                  <strong>BUSINESS AREA</strong>: EV Motors &amp; Industrial motors<br />
                   Ph: +91 99867 88431<br />
-                  Email: <a href="mailto:sales@mecwinindia.com">sales@mecwinindia.com</a></span
-                >
+                  Email: <a href="mailto:sales@mecwinindia.com">sales@mecwinindia.com</a>
+                </span>
               </p>
             </address>
 
@@ -1064,12 +1026,12 @@
             <address class="uk-margin-remove">
               <p>
                 <span style="font-size: 11px">12 Amber Close, Rugby CV22 5GE, <b>United Kingdom</b>.</span><br />
-                <span style="font-size: 11px"><strong>FUNCTION</strong>: Engineering & Sales Office</span><br />
-                <span style="font-size: 11px"
-                  ><strong>BUSINESS AREA</strong>: EV Motors and Industrial motors<br />
+                <span style="font-size: 11px"><strong>FUNCTION</strong>: Engineering &amp; Sales Office</span><br />
+                <span style="font-size: 11px">
+                  <strong>BUSINESS AREA</strong>: EV Motors and Industrial motors<br />
                   Ph: +44 74040 31886<br />
-                  Email: <a href="mailto:sales@mecwinindia.com">sales@mecwinindia.com</a></span
-                >
+                  Email: <a href="mailto:sales@mecwinindia.com">sales@mecwinindia.com</a>
+                </span>
               </p>
             </address>
 
