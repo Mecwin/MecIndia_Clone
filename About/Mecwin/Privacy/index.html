@@ -154,9 +154,10 @@
     ></iframe>
   </noscript>
 
-  <header class="nav-header nav-header--white" id="top">
+   <header class="nav-header nav-header--white" id="top">
     <div class="nav-header-top uk-navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
       <div class="uk-navbar-left"></div>
+
       <div class="uk-navbar-right">
         <div class="uk-visible@l">
           <ul class="nav-header-top-menu uk-navbar-nav">
@@ -177,49 +178,88 @@
     >
       <div class="uk-navbar-left">
         <a href="../../../index.html" class="uk-navbar-item uk-logo" aria-label="Mecwin home">
-          <img src="../../../images/logoC.png" alt="Mecwin logo" width="150" height="23" loading="eager" decoding="async" />
+          <img
+            src="../../../images/logoC.png"
+            alt="Mecwin logo"
+            width="150"
+            height="23"
+            loading="eager"
+            decoding="async"
+          />
         </a>
       </div>
 
-      <div class="uk-navbar-center uk-navbar--custom" style="margin-left:100px;">
+      <div class="uk-navbar-center uk-navbar--custom" style="margin-left:70px;">
         <div class="uk-visible@l">
           <ul class="nav-header-main-menu uk-navbar-nav">
             <li>
-              <button class="open-mega-menu unstyled uk-text-bold" data-title="markets-menu" tabindex="0" aria-expanded="false" data-focus type="button">
+              <button
+                class="open-mega-menu unstyled uk-text-bold"
+                data-title="markets-menu"
+                tabindex="0"
+                aria-expanded="false"
+                data-focus
+                type="button"
+              >
                 Products &amp; Solutions
               </button>
             </li>
             <li>
-              <button class="open-mega-menu unstyled uk-text-bold" data-title="link_2208" tabindex="0" aria-expanded="false" data-focus type="button">
+                <button
+                  class="open-mega-menu unstyled uk-text-bold"
+                  data-title="link_wiring_harness"
+                  tabindex="0"
+                  aria-expanded="false"
+                  data-focus
+                  type="button"
+                >
+                  Wiring Harness
+                </button>
+              </li>
+
+            <li>
+              <button
+                class="open-mega-menu unstyled uk-text-bold"
+                data-title="link_2208"
+                tabindex="0"
+                aria-expanded="false"
+                data-focus
+                type="button"
+              >
                 Company
               </button>
             </li>
+
             <li><a class="uk-text-bold" href="../../../About/Mecwin/CsrActivities.html">CSR Activities</a></li>
             <li><a class="uk-text-bold" href="../../../About/Mecwin/facilities-and-testing.html">Facilities &amp; Testing</a></li>
             <li><a class="uk-text-bold" href="../../../About/Mecwin/Blogs.html">Blogs</a></li>
 
-            <li class="uk-navbar-right" style="margin-left:auto;padding-right:20px;">
+            <li class="uk-navbar-item" style="margin-left:auto; padding-right:20px;">
               <div class="uk-navbar-item change-region uk-visible@m"></div>
 
               <form
-                onsubmit="searchStore(event)"
+                id="storeSearchForm"
+                style="display:flex; align-items:center; border:1px solid #0b3c60; border-radius:20px; overflow:hidden; margin-right:15px;"
+                action="https://www.mecwinstore.com/search-products"
+                method="get"
+                target="_blank"
                 role="search"
-                aria-label="Search Mecwin store"
-                style="display:flex;align-items:center;border:1px solid #0b3c60;border-radius:20px;overflow:hidden;margin-right:15px;"
               >
-                <label class="uk-hidden" for="storeSearchInput">Search motors and pumps</label>
+                <label class="uk-hidden" for="storeSearchInput">Search motors, pumps</label>
                 <input
                   type="search"
                   id="storeSearchInput"
+                  name="q"
                   placeholder="Search motors, pumps..."
-                  style="border:none;outline:none;padding:5px 12px;font-size:13px;width:200px;color:#333;"
+                  autocomplete="off"
+                  style="border:none; outline:none; padding:5px 12px; font-size:13px; width:200px; color:#333;"
                 />
                 <button
                   type="submit"
-                  aria-label="Search products"
-                  style="background:#0b3c60;border:none;padding:6px 12px;cursor:pointer;display:flex;align-items:center;"
+                  style="background:#0b3c60; border:none; padding:6px 12px; cursor:pointer; display:flex; align-items:center;"
+                  aria-label="Search"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true" focusable="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
                     <circle cx="11" cy="11" r="8"></circle>
                     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                   </svg>
@@ -231,9 +271,9 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Mecwin Store"
-                style="display:flex;align-items:center;gap:6px;padding:0 15px;color:#0b3c60;text-decoration:none;font-weight:600;font-size:14px;"
+                style="display:flex; align-items:center; gap:6px; padding:0 15px; color:#0b3c60; text-decoration:none; font-weight:600; font-size:14px;"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#0b3c60" stroke-width="2" aria-hidden="true" focusable="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0b3c60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
                   <circle cx="9" cy="21" r="1"></circle>
                   <circle cx="20" cy="21" r="1"></circle>
                   <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
@@ -249,31 +289,134 @@
         <div class="uk-navbar-item change-region uk-visible@m"></div>
       </div>
 
-      <a class="uk-navbar-toggle uk-hidden@l" href="#" data-uk-toggle="target:#offcanvas-nav-primary" aria-label="Open menu">
+      <a
+        class="uk-navbar-toggle uk-hidden@l"
+        href="#"
+        data-uk-toggle="target: #offcanvas-nav-primary"
+        aria-label="Open menu"
+      >
         <span uk-navbar-toggle-icon></span>
       </a>
     </nav>
 
     <div class="fixed-dropdown">
-      <div tabindex="0" class="mega-menu markets-menu focusable" id="markets-menu">
+      <div tabindex="0" class="mega-menu company-menu markets-menu focusable">
         <div class="uk-align-center uk-container uk-padding uk-padding-remove-bottom">
           <div class="mega-menu-primary">
             <div class="uk-flex-between uk-flex-middle uk-margin-bottom" uk-grid>
-              <div><div class="uk-text-large">Products &amp; Solutions</div></div>
+              <div><div class="uk-text-large">Markets</div></div>
             </div>
 
             <div class="uk-card">
               <div>
                 <ul class="uk-list uk-list-inline mega-menu-menu">
-                  <li><a href="../../../ProductCatagory/Agriculture/index.html"><img src="../../../images/ICONS/agriculture.png" alt="Agriculture icon" width="25" height="25" style="vertical-align:middle;margin-right:5px;" />Agriculture</a></li>
-                  <li><a href="../../../ProductCatagory/MaterialHandling/index.html"><img src="../../../images/ICONS/cargo-handling.png" alt="Material handling icon" width="25" height="25" style="vertical-align:middle;margin-right:5px;" />Material Handling &amp; Industrial Automation</a></li>
-                  <li><a href="../../../ProductCatagory/Automotive/index.html"><img src="../../../images/ICONS/robotic-process-automation.png" alt="Automotive icon" width="25" height="25" style="vertical-align:middle;margin-right:5px;" />Automotive</a></li>
-                  <li><a href="../../../ProductCatagory/AerospaceDefence/index.html"><img src="../../../images/ICONS/aerospace-engineering.png" alt="Aerospace and defence motors icon" width="25" height="25" style="vertical-align:middle;margin-right:5px;" />Aerospace and Defence Motors</a></li>
-                  <li><a href="../../../ProductCatagory/Drone/index.html"><img src="../../../images/ICONS/drone.png" alt="Drone motors icon" width="25" height="25" style="vertical-align:middle;margin-right:5px;" />Drone Motors</a></li>
-                  <li><a href="../../../ProductCatagory/Medical/index.html"><img src="../../../images/ICONS/protection.png" alt="Medical icon" width="25" height="25" style="vertical-align:middle;margin-right:5px;" />Medical</a></li>
-                  <li><a href="../../../ProductCatagory/HomeAppliances/index.html"><img src="../../../images/ICONS/washing-machine.png" alt="Home appliances icon" width="25" height="25" style="vertical-align:middle;margin-right:5px;" />Home Appliances</a></li>
-                  <li><a href="../../../ProductCatagory/WiringHarness/index.html"><img src="../../../images/ICONS/wire.png" alt="Wiring harness icon" width="25" height="25" style="vertical-align:middle;margin-right:5px;" />Wiring Harness</a></li>
-                  <li><a href="../../../ProductCatagory/IoT/index.html"><img src="../../../images/ICONS/internet-of-things.png" alt="IoT icon" width="25" height="25" style="vertical-align:middle;margin-right:5px;" />IoT</a></li>
+                  <li>
+                    <a href="../../../ProductCatagory/Agriculture/index.html">
+                      <img
+                        src="../../../images/ICONS/agriculture.png"
+                        alt="Agriculture icon"
+                        width="25"
+                        height="25"
+                        style="width:25px;height:25px;vertical-align:middle;margin-right:5px;"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      Agriculture
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="../../../ProductCatagory/MaterialHandling/index.html">
+                      <img
+                        src="../../../images/ICONS/cargo-handling.png"
+                        alt="Material Handling icon"
+                        width="25"
+                        height="25"
+                        style="width:25px;height:25px;vertical-align:middle;margin-right:5px;"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      Material Handling &amp; Industrial Automation
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="../../../ProductCatagory/Automotive/index.html">
+                      <img
+                        src="../../../images/ICONS/robotic-process-automation.png"
+                        alt="Automotive icon"
+                        width="25"
+                        height="25"
+                        style="width:25px;height:25px;vertical-align:middle;margin-right:5px;"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      Automotive
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="../../../ProductCatagory/AerospaceDefence/index.html">
+                      <img
+                        src="../../../images/ICONS/aerospace-engineering.png"
+                        alt="Aerospace and Defence Motors icon"
+                        width="25"
+                        height="25"
+                        style="width:25px;height:25px;vertical-align:middle;margin-right:5px;"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      Aerospace and Defence Motors
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="../../../ProductCatagory/Drone/index.html">
+                      <img
+                        src="../../../images/ICONS/drone.png"
+                        alt="Drone Motors icon"
+                        width="25"
+                        height="25"
+                        style="width:25px;height:25px;vertical-align:middle;margin-right:5px;"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      Drone Motors
+                    </a>
+                  </li>
+
+
+                  <li>
+                    <a href="../../../ProductCatagory/HomeAppliances/index.html">
+                      <img
+                        src="../../../images/ICONS/washing-machine.png"
+                        alt="Home Appliances icon"
+                        width="25"
+                        height="25"
+                        style="width:25px;height:25px;vertical-align:middle;margin-right:5px;"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      Home Appliances
+                    </a>
+                  </li>
+
+                  
+
+                  <li>
+                    <a href="../../../ProductCatagory/IoT/index.html">
+                      <img
+                        src="../../../images/ICONS/internet-of-things.png"
+                        alt="IoT icon"
+                        width="25"
+                        height="25"
+                        style="width:25px;height:25px;vertical-align:middle;margin-right:5px;"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      IoT
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -281,18 +424,42 @@
         </div>
       </div>
 
-      <div tabindex="0" class="mega-menu company-menu link_2208 focusable" id="link_2208">
+      <div tabindex="0" class="mega-menu company-menu link_wiring_harness focusable">
+        <div class="uk-align-center uk-container uk-padding uk-padding-remove-bottom">
+          <div class="mega-menu-primary">
+            <div class="uk-flex-between uk-flex-middle uk-margin-bottom" uk-grid>
+              <div><h2 class="uk-text-large">Telecom</h2></div>
+            </div>
+            <div class="uk-card" uk-grid>
+              <div class="uk-width-1-5"><picture></picture></div>
+            <div class="uk-width-4-5">
+                <ul class="uk-list uk-list-inline mega-menu-menu">
+                  <li><a href="../../../ProductCatagory/WiringHarness/index.html">Fibre to the Home Products</a></li>
+                  <li><a href="../../../ProductCatagory/WiringHarness/Products/2_main.html">Fibre to the Antenna Products</a></li>
+                  <li><a href="../../../ProductCatagory/WiringHarness/Products/3_main.html">Optical Transceivers / SFPs</a></li>
+                  <li><a href="../../../ProductCatagory/WiringHarness/Products/4_main.html">Optical Fiber Cable</a></li>
+                  <li><a href="../../../ProductCatagory/WiringHarness/Products/5_main.html">RF Products</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div tabindex="0" class="mega-menu company-menu link_2208 focusable">
         <div class="uk-align-center uk-container uk-padding uk-padding-remove-bottom">
           <div class="mega-menu-primary">
             <div class="uk-flex-between uk-flex-middle uk-margin-bottom" uk-grid>
               <div><div class="uk-text-large">Company</div></div>
             </div>
+
             <div class="uk-card" uk-grid>
               <div class="uk-width-1-5"><picture></picture></div>
+
               <div class="uk-width-4-5">
                 <ul class="uk-list uk-list-inline mega-menu-menu">
                   <li><a href="../../../About/index.html">About Us</a></li>
-                  <li><a href="../../../contact/company-contacts.html">Contacts</a></li>
+                  <li><a href="../../../contact/company-contacts.html">Contact Us</a></li>
                   <li><a href="../../../About/Mecwin/Warranty.html">Warranty Terms and Conditions</a></li>
                 </ul>
               </div>
@@ -300,17 +467,86 @@
           </div>
         </div>
       </div>
+
+      <div tabindex="0" class="mega-menu company-menu link_5026 focusable">
+        <div class="uk-align-center uk-container uk-padding uk-padding-remove-bottom">
+          <div class="mega-menu-primary">
+            <div class="uk-flex-between uk-flex-middle uk-margin-bottom" uk-grid>
+              <div><div class="uk-text-large">CSR Activities</div></div>
+            </div>
+
+            <div class="uk-card">
+              <div class="mega-menu-submenu-summary">
+                <p>CSR Activities</p>
+                <a href="../../../About/Mecwin/CsrActivities.html">
+                  <span uk-icon="icon: chevron-right"></span> Overview
+                </a>
+              </div>
+            </div>
+
+            <div class="uk-card">
+              <div><ul class="uk-list uk-list-inline mega-menu-menu"></ul></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div tabindex="0" class="mega-menu company-menu link_5026 focusable">
+        <div class="uk-align-center uk-container uk-padding uk-padding-remove-bottom">
+          <div class="mega-menu-primary">
+            <div class="uk-flex-between uk-flex-middle uk-margin-bottom" uk-grid>
+              <div><div class="uk-text-large">Facilities &amp; Testing</div></div>
+            </div>
+
+            <div class="uk-card">
+              <div class="mega-menu-submenu-summary">
+                <p>Facilities &amp; Testing</p>
+                <a href="../../../About/Mecwin/facilities-and-testing.html">
+                  <span uk-icon="icon: chevron-right"></span> Overview
+                </a>
+              </div>
+            </div>
+
+            <div class="uk-card">
+              <div><ul class="uk-list uk-list-inline mega-menu-menu"></ul></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div tabindex="0" class="mega-menu company-menu link_5026 focusable">
+        <div class="uk-align-center uk-container uk-padding uk-padding-remove-bottom">
+          <div class="mega-menu-primary">
+            <div class="uk-flex-between uk-flex-middle uk-margin-bottom" uk-grid>
+              <div><div class="uk-text-large">Blogs</div></div>
+            </div>
+
+            <div class="uk-card">
+              <div class="mega-menu-submenu-summary">
+                <p>Blogs</p>
+                <a href="../../../About/Mecwin/Blogs.html">
+                  <span uk-icon="icon: chevron-right"></span> Overview
+                </a>
+              </div>
+            </div>
+
+            <div class="uk-card">
+              <div><ul class="uk-list uk-list-inline mega-menu-menu"></ul></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <aside class="nav-mobile" id="offcanvas-nav-primary" uk-offcanvas="flip:true;overlay:true">
+  <aside class="nav-mobile" id="offcanvas-nav-primary" uk-offcanvas="flip: true; overlay: true">
     <div class="uk-offcanvas-bar uk-offcanvas-bar--expand">
       <div class="nav-mobile-content">
         <div class="nav-mobile-top">
           <div class="uk-position-relative nav-mobile-top-brand" uk-grid>
             <div class="uk-width-3-4">
               <a href="../../../index.html" class="uk-navbar-item uk-logo" aria-label="Mecwin home">
-                <img src="../../../images/logoC.png" alt="Mecwin logo" width="150" height="23" />
+                <img src="../../../images/logoC.png" alt="Mecwin logo" width="150" height="23" loading="lazy" decoding="async" />
               </a>
             </div>
             <div class="uk-width-auto">
@@ -321,8 +557,11 @@
 
         <div class="nav-mobile-middle">
           <ul class="uk-list nav-mobile-menu nav-mobile-menu--arrow">
-            <li><button data-uk-toggle="target:#markets-menu" class="unstyled" type="button">Products &amp; Solutions</button></li>
-            <li><button data-uk-toggle="target:#link_2208" class="unstyled" type="button">Company</button></li>
+            <li><button data-uk-toggle="target: #markets-menu" class="unstyled" type="button">Products &amp; Solutions</button></li>
+            <li>
+  <button data-uk-toggle="target: #link_wiring_harness" class="unstyled" type="button">Wiring Harness</button>
+</li>
+            <li><button data-uk-toggle="target: #link_2208" class="unstyled" type="button">Company</button></li>
             <li><a class="uk-text-bold" href="../../../About/Mecwin/CsrActivities.html">CSR Activities</a></li>
             <li><a class="uk-text-bold" href="../../../About/Mecwin/facilities-and-testing.html">Facilities &amp; Testing</a></li>
             <li><a class="uk-text-bold" href="../../../About/Mecwin/Blogs.html">Blogs</a></li>
@@ -335,6 +574,196 @@
             <li><a href="../../../WorkWithUs/professional-opportunities.html">Work with us</a></li>
           </ul>
         </div>
+      </div>
+    </div>
+  </aside>
+
+  <aside class="nav-mobile subnav-mobile" id="markets-menu" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar uk-offcanvas-bar--expand">
+      <div class="uk-position-relative subnav-mobile-top" uk-grid>
+        <div class="uk-width-3-4">
+          <a href="#" data-uk-toggle="target: #offcanvas-nav-primary">
+            <span uk-icon="icon: chevron-left"></span> Menu
+          </a>
+        </div>
+        <div class="uk-width-auto">
+          <button class="uk-offcanvas-close" type="button" uk-close aria-label="Close menu"></button>
+        </div>
+      </div>
+
+      <div class="subnav-mobile-menu">
+        <div class="uk-text-large uk-text-secondary uk-padding-small subnav-mobile-menu-title">Markets</div>
+
+        <ul class="uk-list nav-mobile-menu nav-mobile-menu--arrow">
+          <li>
+            <a href="../../../ProductCatagory/Agriculture/index.html">
+              <img src="../../../images/ICONS/agriculture.png" alt="Agriculture icon" width="25" height="25" style="width:25px;height:25px;vertical-align:middle;margin-right:5px;" loading="lazy" decoding="async" />
+              Agriculture
+            </a>
+          </li>
+
+          <li>
+            <a href="../../../ProductCatagory/MaterialHandling/index.html">
+              <img src="../../../images/ICONS/cargo-handling.png" alt="Material Handling icon" width="25" height="25" style="width:25px;height:25px;vertical-align:middle;margin-right:5px;" loading="lazy" decoding="async" />
+              Material Handling &amp; Industrial Automation
+            </a>
+          </li>
+
+          <li>
+            <a href="../../../ProductCatagory/Automotive/index.html">
+              <img src="../../../images/ICONS/robotic-process-automation.png" alt="Automotive icon" width="25" height="25" style="width:25px;height:25px;vertical-align:middle;margin-right:5px;" loading="lazy" decoding="async" />
+              Automotive
+            </a>
+          </li>
+
+          <li>
+            <a href="../../../ProductCatagory/AerospaceDefence/index.html">
+              <img src="../../../images/ICONS/aerospace-engineering.png" alt="Aerospace and Defence Motors icon" width="25" height="25" style="width:25px;height:25px;vertical-align:middle;margin-right:5px;" loading="lazy" decoding="async" />
+              Aerospace and Defence Motors
+            </a>
+          </li>
+
+          <li>
+            <a href="../../../ProductCatagory/Drone/index.html">
+              <img src="../../../images/ICONS/drone.png" alt="Drone Motors icon" width="25" height="25" style="width:25px;height:25px;vertical-align:middle;margin-right:5px;" loading="lazy" decoding="async" />
+              Drone Motors
+            </a>
+          </li>
+
+          <li>
+            <a href="../../../ProductCatagory/Medical/index.html">
+              <img src="../../../images/ICONS/protection.png" alt="Medical icon" width="25" height="25" style="width:25px;height:25px;vertical-align:middle;margin-right:5px;" loading="lazy" decoding="async" />
+              Medical
+            </a>
+          </li>
+
+          <li>
+            <a href="../../../ProductCatagory/HomeAppliances/index.html">
+              <img src="../../../images/ICONS/washing-machine.png" alt="Home Appliances icon" width="25" height="25" style="width:25px;height:25px;vertical-align:middle;margin-right:5px;" loading="lazy" decoding="async" />
+              Home Appliances
+            </a>
+          </li>
+
+          <li>
+            <a href="../../../ProductCatagory/WiringHarness/index.html">
+              <img src="../../../images/ICONS/wire.png" alt="Wiring Harness icon" width="25" height="25" style="width:25px;height:25px;vertical-align:middle;margin-right:5px;" loading="lazy" decoding="async" />
+              Wiring Harness
+            </a>
+          </li>
+
+          <li>
+            <a href="../../../ProductCatagory/IoT/index.html">
+              <img src="../../../images/ICONS/internet-of-things.png" alt="IoT icon" width="25" height="25" style="width:25px;height:25px;vertical-align:middle;margin-right:5px;" loading="lazy" decoding="async" />
+              IoT
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+  <aside class="nav-mobile subnav-mobile" id="link_wiring_harness" uk-offcanvas="flip: true; overlay: true">
+  <div class="uk-offcanvas-bar uk-offcanvas-bar--expand">
+    <div class="uk-position-relative subnav-mobile-top" uk-grid>
+      <div class="uk-width-3-4">
+        <a href="#" data-uk-toggle="target: #offcanvas-nav-primary">
+          <span uk-icon="icon: chevron-left"></span> Menu
+        </a>
+      </div>
+      <div class="uk-width-auto">
+        <button class="uk-offcanvas-close" type="button" uk-close aria-label="Close menu"></button>
+      </div>
+    </div>
+
+    <div class="subnav-mobile-menu">
+      <div class="uk-text-large uk-text-secondary uk-padding-small subnav-mobile-menu-title">Wiring Harness</div>
+      <ul class="uk-list nav-mobile-menu nav-mobile-menu--arrow">
+        
+        <li><a href="./ProductCatagory/WiringHarness/index.html">Fibre to the Home Products</a></li>
+        <li><a href="./ProductCatagory/WiringHarness/2_main.html">Fibre to the Antenna Products</a></li>
+        <li><a href="./ProductCatagory/WiringHarness/3_main.html">Optical Transceivers / SFPs</a></li>
+        <li><a href="./ProductCatagory/WiringHarness/4_main.html">Optical Fiber Cables</a></li>
+        <li><a href="./ProductCatagory/WiringHarness/5_main.html">RF Products</a></li>
+
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <aside class="nav-mobile subnav-mobile" id="link_company" uk-offcanvas="flip: true; overlay: true">
+  <div class="uk-offcanvas-bar uk-offcanvas-bar--expand">
+    <div class="uk-position-relative subnav-mobile-top" uk-grid>
+      <div class="uk-width-3-4">
+        <a href="#" data-uk-toggle="target: #offcanvas-nav-primary">
+          <span uk-icon="icon: chevron-left"></span> Menu
+        </a>
+      </div>
+      <div class="uk-width-auto">
+        <button class="uk-offcanvas-close" type="button" uk-close aria-label="Close menu"></button>
+      </div>
+    </div>
+      
+
+      <div class="subnav-mobile-menu">
+        <div class="uk-text-large uk-text-secondary uk-padding-small subnav-mobile-menu-title">Company</div>
+        <ul class="uk-list nav-mobile-menu nav-mobile-menu--arrow">
+          <li><a href="../../../About/index.html" title="About Us">About Us</a></li>
+          <li><a href="../../../contact/company-contacts.html" title="Contact Us"><span>Contact Us</span></a></li>
+          <li><a href="../../../About/Mecwin/Warranty.html">Warranty Terms and Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+  <aside class="nav-mobile subnav-mobile" id="link_4642" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar uk-offcanvas-bar--expand">
+      <div class="uk-position-relative subnav-mobile-top" uk-grid>
+        <div class="uk-width-3-4">
+          <a href="#" data-uk-toggle="target: #offcanvas-nav-primary">
+            <span uk-icon="icon: chevron-left"></span> Menu
+          </a>
+        </div>
+        <div class="uk-width-auto">
+          <button class="uk-offcanvas-close" type="button" uk-close aria-label="Close menu"></button>
+        </div>
+      </div>
+
+      <div class="subnav-mobile-menu">
+        <div class="uk-text-large uk-text-secondary uk-padding-small subnav-mobile-menu-title">Service</div>
+      </div>
+    </div>
+  </aside>
+
+  <aside class="nav-mobile subnav-mobile" id="link_4991" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar uk-offcanvas-bar--expand">
+      <div class="uk-position-relative subnav-mobile-top" uk-grid>
+        <div class="uk-width-3-4">
+          <a href="#" data-uk-toggle="target: #offcanvas-nav-primary">
+            <span uk-icon="icon: chevron-left"></span> Menu
+          </a>
+        </div>
+        <div class="uk-width-auto">
+          <button class="uk-offcanvas-close" type="button" uk-close aria-label="Close menu"></button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <aside class="nav-mobile subnav-mobile" id="link_5026" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar uk-offcanvas-bar--expand">
+      <div class="uk-position-relative subnav-mobile-top" uk-grid>
+        <div class="uk-width-3-4">
+          <a href="#" data-uk-toggle="target: #offcanvas-nav-primary">
+            <span uk-icon="icon: chevron-left"></span> Menu
+          </a>
+        </div>
+        <div class="uk-width-auto">
+          <button class="uk-offcanvas-close" type="button" uk-close aria-label="Close menu"></button>
+        </div>
+      </div>
+
+      <div class="subnav-mobile-menu">
+        <div class="uk-text-large uk-text-secondary uk-padding-small subnav-mobile-menu-title">Blogs</div>
       </div>
     </div>
   </aside>
