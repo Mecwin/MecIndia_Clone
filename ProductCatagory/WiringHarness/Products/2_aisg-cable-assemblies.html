@@ -289,6 +289,70 @@
         }
       }
     </script>
+  <!-- ===== NAVBAR NO-OVERLAP LAYOUT FIX ===== -->
+  <style>
+    @media (min-width: 1200px) {
+      .nav-header-main {
+        display: flex !important;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 8px;
+      }
+      /* Let the menu flow in the row instead of being absolutely centered */
+      .nav-header-main > .uk-navbar-center {
+        position: static !important;
+        transform: none !important;
+        left: auto !important;
+        right: auto !important;
+        margin-left: 12px !important;
+        flex: 1 1 auto;
+        min-width: 0;
+      }
+      /* Items sit on one centered line; wrap tidily only if a translation is too long */
+      .nav-header-main > .uk-navbar-center .nav-header-main-menu {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 6px;
+        row-gap: 0;
+      }
+      .nav-header-main .nav-header-main-menu > li > a,
+      .nav-header-main .nav-header-main-menu > li > button {
+        font-size: 13px;
+        line-height: 1.25;
+        padding: 0 10px;
+        white-space: nowrap;
+      }
+      .nav-header-main > .uk-navbar-left,
+      .nav-header-main > .uk-navbar-right {
+        flex: 0 0 auto;
+      }
+      /* Compact the right-side tools so the menu has room for one line */
+      .nav-header-main .change-region:empty { display: none; }
+      .nav-header-main > .uk-navbar-right > .uk-navbar-item { padding: 0 6px; }
+      #storeSearchInput { width: 150px !important; }
+    }
+  </style>
+  <!-- ===== END NAVBAR NO-OVERLAP LAYOUT FIX ===== -->
+  <!-- ===== MULTI-LANGUAGE SWITCHER ===== -->
+  <style>
+    #mw-lang-wrap{position:relative;display:inline-flex;align-items:center;margin-left:10px;z-index:99999}
+    #mw-lang-btn{display:flex;align-items:center;gap:5px;background:transparent;border:1.5px solid rgba(255,255,255,0.85);color:#fff;padding:5px 13px;border-radius:20px;font-size:13px;font-weight:500;cursor:pointer;white-space:nowrap;transition:all .2s}
+    .uk-navbar-sticky #mw-lang-btn,.nav-header--white #mw-lang-btn{border-color:#0b3c60;color:#0b3c60}
+    #mw-lang-btn:hover{background:rgba(255,255,255,0.18)}
+    #mw-lang-drop{display:none;position:absolute;top:calc(100% + 8px);right:0;background:#fff;border-radius:12px;box-shadow:0 8px 28px rgba(0,0,0,0.15);min-width:190px;overflow:hidden;border:1px solid #e5e7eb}
+    #mw-lang-drop.open{display:block}
+    .mw-opt{display:flex;align-items:center;gap:10px;padding:10px 16px;font-size:14px;color:#222;cursor:pointer;background:none;border:none;width:100%;text-align:left;transition:background .15s}
+    .mw-opt:hover{background:#f0f4ff}
+    .mw-opt.active{background:#e8f0fe;color:#1a56db;font-weight:600}
+    .mw-opt .mw-native{font-size:15px;font-weight:500}
+    .mw-opt .mw-english{font-size:11px;color:#888;margin-left:auto}
+    #google_translate_element{display:none!important}
+    .goog-te-banner-frame{display:none!important}
+    .skiptranslate{display:none!important}
+    body{top:0!important}
+  </style>
+  <!-- ===== END MULTI-LANGUAGE SWITCHER ===== -->
   </head>
 
   <body>
@@ -436,6 +500,40 @@
       <div class="uk-navbar-right">
         <div class="uk-navbar-item change-region uk-visible@m"></div>
       </div>
+
+        <div class="uk-navbar-right">
+          <div class="uk-navbar-item" style="padding:0 8px">
+            <div id="mw-lang-wrap">
+                          <button id="mw-lang-btn" onclick="mwToggle(event)" aria-label="Select language" aria-haspopup="true">
+                            🌐 <span id="mw-lbl">EN</span> ▾
+                          </button>
+                          <div id="mw-lang-drop" role="menu">
+                            <button class="mw-opt active" onclick="mwSet('en','EN',this)">
+                              <span>🇮🇳</span><span class="mw-native">English</span><span class="mw-english">English</span>
+                            </button>
+                            <button class="mw-opt" onclick="mwSet('kn','KN',this)">
+                              <span>🌟</span><span class="mw-native">ಕನ್ನಡ</span><span class="mw-english">Kannada</span>
+                            </button>
+                            <button class="mw-opt" onclick="mwSet('hi','HI',this)">
+                              <span>🌟</span><span class="mw-native">हिंदी</span><span class="mw-english">Hindi</span>
+                            </button>
+                            <button class="mw-opt" onclick="mwSet('mr','MR',this)">
+                              <span>🌟</span><span class="mw-native">मराठी</span><span class="mw-english">Marathi</span>
+                            </button>
+                            <button class="mw-opt" onclick="mwSet('te','TE',this)">
+                              <span>🌟</span><span class="mw-native">తెలుగు</span><span class="mw-english">Telugu</span>
+                            </button>
+                            <button class="mw-opt" onclick="mwSet('ta','TA',this)">
+                              <span>🌟</span><span class="mw-native">தமிழ்</span><span class="mw-english">Tamil</span>
+                            </button>
+                            <button class="mw-opt" onclick="mwSet('ml','ML',this)">
+                              <span>🌟</span><span class="mw-native">മലയാളം</span><span class="mw-english">Malayalam</span>
+                            </button>
+                          </div>
+                          <div id="google_translate_element"></div>
+                        </div>
+          </div>
+        </div>
 
       <a
         class="uk-navbar-toggle uk-hidden@l"
@@ -1332,5 +1430,39 @@
         "REQUEST_DOCUMENT_LOCALE": "en_IN"
       }
     </script>
+  <!-- ===== MULTI-LANGUAGE SWITCHER SCRIPT ===== -->
+  <script>
+    function googleTranslateElementInit(){
+      new google.translate.TranslateElement({
+        pageLanguage:'en',
+        includedLanguages:'kn,hi,mr,te,ta,ml',
+        autoDisplay:false
+      },'google_translate_element');
+    }
+    function mwToggle(e){
+      e.stopPropagation();
+      document.getElementById('mw-lang-drop').classList.toggle('open');
+    }
+    document.addEventListener('click',function(){
+      var d=document.getElementById('mw-lang-drop');
+      if(d) d.classList.remove('open');
+    });
+    function mwSet(code,label,btn){
+      document.getElementById('mw-lang-drop').classList.remove('open');
+      document.querySelectorAll('.mw-opt').forEach(function(b){b.classList.remove('active');});
+      btn.classList.add('active');
+      document.getElementById('mw-lbl').textContent=label;
+      if(code==='en'){
+        document.cookie='googtrans=/en/en;path=/';
+        document.cookie='googtrans=/en/en;domain=.'+location.hostname+';path=/';
+        location.reload();
+        return;
+      }
+      var c=document.querySelector('.goog-te-combo');
+      if(c){c.value=code;c.dispatchEvent(new Event('change'));}
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+  <!-- ===== END MULTI-LANGUAGE SWITCHER SCRIPT ===== -->
   </body>
 </html>
