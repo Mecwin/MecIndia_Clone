@@ -459,6 +459,20 @@
                         IoT
                       </a>
                     </li>
+                    <li>
+                      <a href="./ProductCatagory/AIML/index.html">
+                        <img
+                          src="./images/ICONS/artificial-intelligence.png"
+                          alt="AI/ML icon"
+                          width="25"
+                          height="25"
+                          loading="lazy"
+                          decoding="async"
+                          style="vertical-align: middle; margin-right: 5px;"
+                        />
+                        AI/ML
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -723,6 +737,20 @@
                   style="vertical-align: middle; margin-right: 5px;"
                 />
                 IoT
+              </a>
+            </li>
+            <li>
+              <a href="./ProductCatagory/AIML/index.html">
+                <img
+                  src="./images/ICONS/artificial-intelligence.png"
+                  alt="AI/ML icon"
+                  width="25"
+                  height="25"
+                  loading="lazy"
+                  decoding="async"
+                  style="vertical-align: middle; margin-right: 5px;"
+                />
+                AI/ML
               </a>
             </li>
           </ul>
@@ -1227,10 +1255,30 @@
       Our Certifications
     </h2>
 
-    <!-- 3x2 GRID -->
+    <!-- 3x3 GRID -->
     <div id="cert-grid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
 
       <!-- IMAGE 1 -->
+
+      <!-- IMAGE 9 (NEW) -->
+      <div onclick="openCertModal(8)" style="position:relative; border:1px solid #e0e0e0; border-radius:14px; overflow:hidden; background:#fafafa; cursor:pointer;">
+        <img src="./images/MECWIN TECHNOLOGIES INDIA PRIVATE (1)_page-0001.jpg" style="width:100%; height:280px; object-fit:contain;">
+        <div style="position:absolute; bottom:10px; right:10px; background:rgba(11,60,96,0.75); color:#fff; font-size:11px; padding:4px 10px; border-radius:6px;">Click to view</div>
+      </div>
+
+      <!-- IMAGE 8 (NEW) -->
+      <div onclick="openCertModal(7)" style="position:relative; border:1px solid #e0e0e0; border-radius:14px; overflow:hidden; background:#fafafa; cursor:pointer;">
+        <img src="./images/CMMI lEVAL-3 MECWIN TECHNOLOGIES INDIA PRIVATE LIMITED FINAL_page-0001.jpg" style="width:100%; height:280px; object-fit:contain;">
+        <div style="position:absolute; bottom:10px; right:10px; background:rgba(11,60,96,0.75); color:#fff; font-size:11px; padding:4px 10px; border-radius:6px;">Click to view</div>
+      </div>
+      
+      <!-- IMAGE 7 (NEW) -->
+      <div onclick="openCertModal(6)" style="position:relative; border:1px solid #e0e0e0; border-radius:14px; overflow:hidden; background:#fafafa; cursor:pointer;">
+        <img src="./images/CMMI lEVAL-5 MECWIN TECHNOLOGIES INDIA PRIVATE LIMITED FINAL_page-0001.jpg" style="width:100%; height:280px; object-fit:contain;">
+        <div style="position:absolute; bottom:10px; right:10px; background:rgba(11,60,96,0.75); color:#fff; font-size:11px; padding:4px 10px; border-radius:6px;">Click to view</div>
+      </div>
+
+      
       <div onclick="openCertModal(0)" style="position:relative; border:1px solid #e0e0e0; border-radius:14px; overflow:hidden; background:#fafafa; cursor:pointer;">
         <img src="./images/Img 1_page-0001.jpg" style="width:100%; height:280px; object-fit:contain;">
         <div style="position:absolute; bottom:10px; right:10px; background:rgba(11,60,96,0.75); color:#fff; font-size:11px; padding:4px 10px; border-radius:6px;">Click to view</div>
@@ -1266,6 +1314,8 @@
         <div style="position:absolute; bottom:10px; right:10px; background:rgba(11,60,96,0.75); color:#fff; font-size:11px; padding:4px 10px; border-radius:6px;">Click to view</div>
       </div>
 
+     
+
     </div>
 
   </div>
@@ -1289,7 +1339,10 @@ var certImages = [
   './images/Img 3_page-0001.jpg',
   './images/Img 4_page-0001.jpg',
   './images/5Mecwin Green_page-0001.jpeg',
-  './images/ZED MSME Registration Certificate_page-0001.jpeg'
+  './images/ZED MSME Registration Certificate_page-0001.jpeg',
+  './images/CMMI lEVAL-5 MECWIN TECHNOLOGIES INDIA PRIVATE LIMITED FINAL_page-0001.jpg',
+  './images/CMMI lEVAL-3 MECWIN TECHNOLOGIES INDIA PRIVATE LIMITED FINAL_page-0001.jpg',
+  './images/MECWIN TECHNOLOGIES INDIA PRIVATE (1)_page-0001.jpg'
 ];
 
 function openCertModal(index){
