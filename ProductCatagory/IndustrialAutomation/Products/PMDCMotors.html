@@ -230,6 +230,24 @@
     }
   </style>
   <!-- ===== END NAVBAR NO-OVERLAP LAYOUT FIX ===== -->
+  <!-- ===== FIX: sticky nav causing page content to jump on scroll ===== -->
+  <style>
+    /* The data-uk-sticky attribute has been removed from the nav (see
+       below). UIkit's JS-based sticky physically detaches the nav from
+       the page and reinserts a placeholder on every scroll event to
+       hold its height -- for a frame or two on each scroll tick the
+       real nav and the placeholder can disagree, which is what reads
+       as the whole page (including the Applications box) jumping
+       up/down. Native CSS position:sticky has no placeholder and no
+       JS timing gap at all, so it can never produce that jump. */
+    .nav-header-main {
+      position: sticky !important;
+      top: 0;
+      z-index: 980;
+      background: #ffffff;
+    }
+  </style>
+  <!-- ===== END FIX ===== -->
   <!-- ===== MULTI-LANGUAGE SWITCHER ===== -->
   <style>
     #mw-lang-wrap{position:relative;display:inline-flex;align-items:center;margin-left:10px;z-index:99999}
@@ -287,7 +305,25 @@
       color: #0b3c60 !important;
       background: #f0f4f8 !important;
     }
+
+    /* FIX 4: the new Applications box lives in the same column as
+       sticky-product-info -- make sure it can never inherit sticky/fixed
+       positioning from a shared selector or leftover UIkit state either. */
+    .pmdc-applications-box,
+    .pmdc-applications-box.uk-sticky,
+    .pmdc-applications-box.uk-sticky-fixed,
+    .pmdc-applications-box.uk-active {
+      position: static !important;
+      top: auto !important;
+      left: auto !important;
+      right: auto !important;
+      bottom: auto !important;
+      transform: none !important;
+      z-index: auto !important;
+      width: auto !important;
+    }
   </style>
+    
   <!-- ===== END FIX ===== -->
     <script data-goatcounter="https://mecwinindia.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -334,7 +370,6 @@
       aria-label="Main navigation"
       class="nav-header-main uk-navbar uk-navbar-container uk-navbar-transparent"
       data-uk-navbar="dropbar: false;"
-      data-uk-sticky="animation: uk-animation-slide-top; sel-target: .nav-main; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent;"
     >
       <div class="uk-navbar-left">
         <a href="../../../index.html" class="uk-navbar-item uk-logo" aria-label="Mecwin home">
@@ -930,6 +965,9 @@
                   PMDC Motors
                 </h1>
                 <hr />
+                <style>
+
+        </style>
                 <a
                   href="../../../Documents/Mecwin PMDC Catalog 1.pdf"
                   class="uk-button uk-button-link"
@@ -940,6 +978,22 @@
                   Download brochure
                 </a>
               </div>
+             <!-- ===== NEW: Applications box — matches Product Overview font size/style, 8 items ===== -->
+    <div class="pmdc-applications-box">
+  <h3 class="pmdc-applications-title">Applications</h3>
+  <ul class="pmdc-applications-list">
+    <li>Automatic gates, boom barriers, rolling shutters &amp; garage doors</li>
+    <li>Tail lifts, hoists, dock levellers &amp; scissor lifts</li>
+    <li>Pallet trucks, stackers, AGVs &amp; conveyors</li>
+    <li>Agricultural sprayers, feed augers &amp; solar tracker drives</li>
+    <li>Hospital beds, patient hoists &amp; mobility scooters</li>
+    <li>Medical/lab equipment — infusion &amp; peristaltic pumps</li>
+    <li>Vending machines, ATMs, motorised blinds, valves &amp; actuators</li>
+    <li>Treadmills, e-rickshaws, automotive wipers &amp; machine tools</li>
+  </ul>
+</div>               
+                             
+              
             </div>
           </div>
         </div>
@@ -960,7 +1014,7 @@
           <div class="uk-margin-bottom"></div>
           <div class="uk-text-center">
             <a
-              href="PASTE-PMDC-BROCHURE-PDF-LINK-HERE"
+              href="../../../Documents/Mecwin PMDC Catalog 1.pdf"
               class="uk-button uk-button-link"
               download="Mecwin PMDC Motors Brochure.pdf"
               aria-label="Download PMDC motors brochure"
@@ -968,6 +1022,26 @@
               <i uk-icon="icon: bfi-manual_primary"></i>
               Download brochure
             </a>
+          <ul class="applications-list">
+  <li>Automatic gates, boom barriers, rolling shutters and garage doors</li>
+  <li>Tail lifts, dock levellers, tipper bodies and scissor lifts (DC hydraulic power packs)</li>
+  <li>Winches, hoists, davits and marine deck equipment</li>
+  <li>Pallet trucks, stackers and forklift pump / steering drives</li>
+  <li>AGVs and mobile robots &mdash; drive and steering wheels</li>
+  <li>Packaging and material-handling conveyors, feeders and indexers</li>
+  <li>Floor scrubbers, sweepers and industrial cleaning machines</li>
+  <li>Agricultural sprayers, seed and fertiliser metering, feed augers and mixers</li>
+  <li>Solar tracker slew drives</li>
+  <li>Hospital beds, patient hoists, treatment tables and mobility scooters</li>
+  <li>Medical and lab equipment &mdash; infusion, syringe and peristaltic pumps</li>
+  <li>Vending machines, ATMs, currency counters and kiosk mechanisms</li>
+  <li>Motorised blinds, projector screens, stage curtains and greenhouse vents</li>
+  <li>Valve, damper and actuator drives</li>
+  <li>Treadmills, gym and rehabilitation equipment</li>
+  <li>Golf carts, e-rickshaw auxiliaries and light EV accessory drives</li>
+  <li>Automotive and aftermarket &mdash; wipers, seat and window drives, car wash systems</li>
+  <li>Machine tools, printing and textile machinery needing wide adjustable speed</li>
+</ul>
           </div>
         </div>
       </div>
@@ -2797,8 +2871,8 @@
                 <span style="font-size: 11px"><strong>FUNCTION</strong>: Sales, Administration</span><br />
                 <span style="font-size: 11px">
                   <strong>BUSINESS AREA</strong>: Pump Application &amp; Aerospace Defence Motors<br />
-                  Ph: +91 97412 29797<br />
-                  Email: <a href="mailto:csr@mecwinindia.com">csr@mecwinindia.com</a>
+                  Ph: +91 96064 85937<br />
+                  Email: <a href="mailto:marketing@mecwininda.com">marketing@mecwininda.com</a>
                 </span>
               </p>
             </address>
