@@ -286,10 +286,17 @@ Not connected to Google Sheets yet. Open this file and set <code>SCRIPT_URL</cod
 </div>
 </div>
 <div class="field">
-<label for="vEmail">Gmail / Email</label>
+<label for="vEmail">Email</label>
 <div class="input-wrap">
 <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
 <input type="email" id="vEmail" placeholder="e.g. name@gmail.com">
+</div>
+</div>
+<div class="field">
+<label for="vCompany">Company / Organization</label>
+<div class="input-wrap">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16"/><path d="M15 21V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v12"/><path d="M9 7h2M9 11h2M9 15h2"/></svg>
+<input type="text" id="vCompany" placeholder="e.g. ABC Technologies Pvt Ltd">
 </div>
 </div>
 <div class="field">
@@ -357,7 +364,6 @@ placeholder="Search employee name..."
 <option value="Tejashwini K E">Tejashwini K E</option>
 <option value="Thejareddy Setti Palle">Thejareddy Setti Palle</option>
 <option value="Thushar Mithra">Thushar Mithra</option>
-<option value="Uday HP">Uday HP</option>
 <option value="Varalakshmi R">Varalakshmi R</option>
 <option value="Vargese S">Vargese S</option>
 <option value="Veerendar Kumar Karsh">Veerendar Kumar Karsh</option>
@@ -387,34 +393,9 @@ Type to search and select the employee name.
 <p>Thanks for visiting MECWIN — please wait for a confirmation email.</p>
 <button class="btn secondary" id="newEntryBtn" style="margin-top:20px;">Check in another visitor</button>
 </div>
-<!-- Admin / QR generator -->
-<details>
-<summary>Reception / Admin — generate the entrance QR code</summary>
-<div class="card" style="margin-top:10px;">
-<h2 style="font-size:0.95rem;">Generate QR Code</h2>
-<div class="field" style="margin-top:10px;">
-<label for="qrUrl">Public URL where this page is hosted</label>
-<input type="text" id="qrUrl" placeholder="https://yourdomain.com/visitor-checkin.html" style="padding-left:14px;">
-</div>
-<button class="btn secondary" id="genQrBtn">Generate QR</button>
-<div id="qrOutput"></div>
-<p class="hint" id="downloadHint" style="display:none;">
-Right-click / long-press the QR above to save it, then print it and place it at the MECWIN entrance.
-</p>
-</div>
-</details>
-<!-- Admin / local log -->
-<details>
-<summary>Reception / Admin — visitor log on this device</summary>
-<div class="card" style="margin-top:10px;">
-<h2 style="font-size:0.95rem;">Recent check-ins</h2>
-<div id="logList"><p class="hint">No check-ins yet.</p></div>
-<button class="btn secondary" id="clearLogBtn" style="margin-top:16px;">Clear local log</button>
-</div>
-</details>
+
 </div>
 <footer><span class="fmark">MECWIN</span> · Empowering Future</footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
 /* =========================================================
 CONFIGURE THIS (optional): paste your Google Apps Script
@@ -422,7 +403,7 @@ Web App URL here to sync check-ins to a Google Sheet.
 (Deploy → New deployment → Web app → copy the URL ending in /exec)
 Leave the placeholder as-is to run purely on local storage.
 ========================================================= */
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzNM0IvavXQRT73vn6FajEINgbtGYadUU_GQMm7RLAtIUKj7ZBkkCCNbcEbg20GI_gFBQ/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw1akGUHHySuFTV6uEzSNlR7PThxzdj1RWBBsUXZGVJZGQhYwMhKM26E-cXsXrdtu_qEg/exec";
 function nowLocalDatetime(){
 const d = new Date();
 d.setMinutes(d.getMinutes() - d.getTimezoneOffset());
@@ -432,37 +413,6 @@ document.getElementById('vTime').value = nowLocalDatetime();
 if(SCRIPT_URL.includes("PASTE_YOUR_GOOGLE_SCRIPT_URL_HERE")){
 document.getElementById('configWarning').style.display = 'block';
 }
-function getLocalLog(){
-try{ return JSON.parse(localStorage.getItem('visitor_log_backup')) || []; }
-catch(err){ return []; }
-}
-function escapeHtml(str){
-return String(str).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-}
-function renderLog(){
-const rows = getLocalLog().slice().reverse().slice(0, 50);
-const listEl = document.getElementById('logList');
-if(!rows.length){
-listEl.innerHTML = '<p class="hint">No check-ins yet.</p>';
-return;
-}
-listEl.innerHTML = rows.map(v => `
-<div class="log-row">
-<div>
-<div class="log-name">${escapeHtml(v.name || 'Unnamed')}</div>
-<div class="log-meta">${escapeHtml(v.phone || '')}${v.purpose ? ' · ' + escapeHtml(v.purpose) : ''}</div>
-</div>
-<div class="log-time">${escapeHtml(v.time || '')}</div>
-</div>
-`).join('');
-}
-renderLog();
-document.getElementById('clearLogBtn').addEventListener('click', ()=>{
-if(confirm('Clear the visitor log stored on this device? This cannot be undone.')){
-localStorage.removeItem('visitor_log_backup');
-renderLog();
-}
-});
 document.getElementById('visitorForm').addEventListener('submit', function(e){
 e.preventDefault();
 const selectedEmployee = document.getElementById('vMeetWith').value.trim();
@@ -481,6 +431,7 @@ const payload = {
 name: document.getElementById('vName').value.trim(),
 phone: document.getElementById('vPhone').value.trim(),
 email: document.getElementById('vEmail').value.trim(),
+company: document.getElementById('vCompany').value.trim(),
 purpose: document.getElementById('vPurpose').value.trim(),
 meetingWith: selectedEmployee,
 time: document.getElementById('vTime').value
@@ -488,13 +439,7 @@ time: document.getElementById('vTime').value
 const submitBtn = document.getElementById('submitBtn');
 submitBtn.disabled = true;
 submitBtn.textContent = "Submitting...";
-try{
-const local = getLocalLog();
-local.push(payload);
-localStorage.setItem('visitor_log_backup', JSON.stringify(local));
-}catch(err){}
 const finishUp = () => {
-renderLog();
 showSuccess();
 submitBtn.disabled = false;
 submitBtn.textContent = "Check In";
@@ -521,20 +466,6 @@ document.getElementById('visitorForm').reset();
 document.getElementById('vTime').value = nowLocalDatetime();
 document.getElementById('successCard').style.display = 'none';
 document.getElementById('formCard').style.display = 'block';
-});
-document.getElementById('genQrBtn').addEventListener('click', ()=>{
-const url = document.getElementById('qrUrl').value.trim();
-if(!url){ alert("Please enter the public URL where this page is hosted."); return; }
-const output = document.getElementById('qrOutput');
-output.innerHTML = '';
-new QRCode(output, {
-text: url,
-width: 220,
-height: 220,
-colorDark: "#081b33",
-colorLight: "#ffffff"
-});
-document.getElementById('downloadHint').style.display = 'block';
 });
 </script>
 </body>
