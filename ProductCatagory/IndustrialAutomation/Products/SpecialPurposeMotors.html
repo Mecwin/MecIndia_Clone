@@ -250,6 +250,23 @@
   </style>
   <!-- ===== END MULTI-LANGUAGE SWITCHER ===== -->
     <script data-goatcounter="https://mecwinindia.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <!-- FIX: stop "Download brochure" block from floating while scrolling -->
+  <style>
+    .sticky-product-info,
+    .sticky-product-info.uk-sticky,
+    .sticky-product-info.uk-sticky-fixed,
+    .sticky-product-info.uk-active,
+    .product-top .sticky-product-info {
+      position: static !important;
+      top: auto !important;
+      left: auto !important;
+      right: auto !important;
+      bottom: auto !important;
+      transform: none !important;
+      z-index: auto !important;
+      width: auto !important;
+    }
+  </style>
 </head>
 
   <body>
@@ -835,7 +852,7 @@
             </div>
 
             <div class="uk-width-expand">
-              <div class="sticky-product-info">
+              <div class="sticky-product-info" style="position: static !important; top: auto !important;">
                 <p class="uk-margin-remove-bottom">
                   <small class="uk-text-muted">Process Industries</small>
                 </p>
@@ -1118,7 +1135,7 @@
             <address class="uk-margin-remove">
               <p>
                 <span style="font-size: 11px">
-                  
+                  Cauvery Sanate, 1st Floor, 10/1-1, Next to Vaishnavi Sapphire Centre, Tumkur Road, Yeswanthpur, Bengaluru – 560022, India
                 </span><br />
                 <span style="font-size: 11px"><strong>FUNCTION</strong>: Sales, Administration</span><br />
                 <span style="font-size: 11px">

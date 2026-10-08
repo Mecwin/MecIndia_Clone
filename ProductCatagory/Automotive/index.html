@@ -5,11 +5,11 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>EV Motors for Two, Three, Four Wheelers & Trucks | Mecwin </title>
+    <title>EV Motors for Two, Three, Four Wheelers &amp; Trucks | Mecwin India</title>
 
     <meta
       name="description"
-      content="Explore Mecwin automotive solutions including EV two wheeler motors, EV three wheeler motors, EV four wheeler motors, EV truck motors, systems in India."
+      content="Explore Mecwin automotive solutions including EV two wheeler motors, EV three wheeler motors, EV four wheeler motors, EV truck motors, steering motors, systems in India."
     />
     <meta
       name="keywords"
@@ -55,7 +55,7 @@
     <meta property="og:site_name" content="Mecwin" />
     <meta
       property="og:title"
-      content="Automotive Solutions | EV Motors for Two, Three, Four Wheelers & Trucks | Mecwin India"
+      content="Automotive Solutions | EV Motors for Two, Three, Four Wheelers &amp; Trucks | Mecwin India"
     />
     <meta
       property="og:description"
@@ -80,7 +80,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Automotive Solutions | EV Motors for Two, Three, Four Wheelers & Trucks | Mecwin India"
+      content="Automotive Solutions | EV Motors for Two, Three, Four Wheelers &amp; Trucks | Mecwin India"
     />
     <meta
       name="twitter:description"
@@ -220,6 +220,15 @@
         }
       }
     </script>
+  <!-- ===== AUTOMOTIVE HERO CLIP FIX ===== -->
+  <style>
+    /* Section clipped the pulled-up card (top of "Automotive Solutions" cut off). Keep sideways clipping, allow the card to show vertically. */
+    #automotive-hero { overflow-x: clip; overflow-y: visible; padding-top: 60px; padding-bottom: 40px; }
+    #automotive-hero .card-content-move-up .uk-card-body { padding-top: 40px; border-top: none !important; }
+    #automotive-hero .swiper-card-content-wrapper h2 { margin-top: 0; line-height: 1.3; }
+    @media (max-width: 959px) { #automotive-hero { padding-top: 20px; } }
+  </style>
+  <!-- ===== END AUTOMOTIVE HERO CLIP FIX ===== -->
   <!-- ===== NAVBAR NO-OVERLAP LAYOUT FIX ===== -->
   <style>
     @media (min-width: 1200px) {
@@ -775,11 +784,11 @@
 
       <section class="uk-container">
         <div class="uk-child-width-1-2@m uk-width-auto uk-flex-middle" uk-grid>
-          <div><h1 class="uk-text-secondary uk-margin-remove-top">Automotive</h1></div>
+          <div><h1 class="uk-text-secondary uk-margin-remove-top">Automotive EV Motors</h1></div>
         </div>
       </section>
 
-      <section class="uk-section" style="overflow: hidden">
+      <section class="uk-section" id="automotive-hero">
         <div class="card-image-gallery">
           <div class="swiper swiper-card-image uk-visible@m">
             <div class="swiper-wrapper uk-margin-large-bottom">
@@ -830,7 +839,7 @@
 
                       <div class="swiper-card-content-wrapper">
                         <h2 class="uk-text-lead uk-text-secondary uk-margin-small-bottom" data-sheet-modal-title>
-                          Automotive
+                          Automotive Solutions
                         </h2>
                         <p class="uk-margin-small-bottom uk-margin-remove-top">
                           <small data-sheet-modal-description>
@@ -862,7 +871,7 @@
 
       <section style="padding: 20px 0">
         <div style="max-width: 1200px; margin: 0 auto; padding: 0 15px">
-          <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px">Products</h2>
+          <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px">Automotive Products</h2>
 
           <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px">
             <button
@@ -912,6 +921,14 @@
               onclick="filterProducts('ev-bus')"
             >
               EV BUS
+            </button>
+            <button
+              id="filter-steering-motor"
+              type="button"
+              style="padding: 8px 16px; font-size: 14px; border: 1px solid #ccc; background: #f0f0f0; border-radius: 4px; cursor: pointer; color: black"
+              onclick="filterProducts('steering-motor')"
+            >
+              Steering Motor
             </button>
           </div>
 
@@ -1041,7 +1058,7 @@
               >
                 <img
                   src="../../images/3wheeler/evbus.png"
-                  alt="EV Three Wheeler Motor"
+                  alt="EV Bus Motor"
                   width="280"
                   height="180"
                   style="width: 100%; height: 180px; object-fit: contain; border-radius: 4px"
@@ -1053,6 +1070,61 @@
                   <p style="font-size: 12px; color: #999; margin: 0">Torque : Min 500Nm / Max 3000Nm</p>
                   <p style="font-size: 12px; color: #999; margin: 0">Power: 60 / 260 kw</p>
                   <p style="font-size: 12px; color: #999; margin: 0">Speed: 0rpm ~ 3000rpm</p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="product-card"
+              data-category="steering-motor"
+              style="width: 100%; max-width: 280px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column"
+            >
+              <a
+                href="../Agriculture/Products.html/Steernig motor.html"
+                style="text-decoration: none; color: inherit; display: flex; flex-direction: column; flex: 1"
+              >
+                <img
+                  src="../../images/Steering Motor - Mecwin.png"
+                  alt="Steering Motor"
+                  width="280"
+                  height="180"
+                  style="width: 100%; height: 180px; object-fit: contain; border-radius: 4px"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div style="padding: 15px; display: flex; flex-direction: column; flex: 1">
+                  <h3 style="font-size: 16px; font-weight: bold; margin: 0 0 10px">Steering Motor (12 V)</h3>
+                  <p style="font-size: 12px; color: #999; margin: 0">Type: BLDC Servo Motor</p>
+                  <p style="font-size: 12px; color: #999; margin: 0">Voltage: 12 V</p>
+                  <p style="font-size: 12px; color: #999; margin: 0">Power: 30-60 W</p>
+                  <p style="font-size: 12px; color: #999; margin: 0">Torque: 7-16 Nm</p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="product-card"
+              data-category="steering-motor"
+              style="width: 100%; max-width: 280px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column"
+            >
+              <a
+                href="../MaterialHandling/Products/Steering Motor.html"
+                style="text-decoration: none; color: inherit; display: flex; flex-direction: column; flex: 1"
+              >
+                <img
+                  src="../../images/3wheeler/Steering_Motor.webp"
+                  alt="Steering Motor 1.2 kW"
+                  width="280"
+                  height="180"
+                  style="width: 100%; height: 180px; object-fit: contain; border-radius: 4px"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div style="padding: 15px; display: flex; flex-direction: column; flex: 1">
+                  <h3 style="font-size: 16px; font-weight: bold; margin: 0 0 10px">Steering Motor (1.2 kW)</h3>
+                  <p style="font-size: 12px; color: #999; margin: 0">Power: 1.2 kW</p>
+                  <p style="font-size: 12px; color: #999; margin: 0">Speed: 2265 rpm</p>
+                  <p style="font-size: 12px; color: #999; margin: 0">Max Torque: 14 Nm</p>
                 </div>
               </a>
             </div>
@@ -1072,7 +1144,7 @@
             <address class="uk-margin-remove">
               <p>
                 <span style="font-size: 11px">
-                  
+                  Cauvery Sanate, 1st Floor, 10/1-1, Next to Vaishnavi Sapphire Centre, Tumkur Road, Yeswanthpur, Bengaluru – 560022, India
                 </span>
                 <br />
                 <span style="font-size: 11px"><strong>FUNCTION</strong>: Sales, Administration</span>
