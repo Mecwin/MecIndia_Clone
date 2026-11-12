@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en-IN">
   <head>
+    
     <meta charset="utf-8" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -230,6 +231,25 @@
     }
   </style>
   <!-- ===== END NAVBAR NO-OVERLAP LAYOUT FIX ===== -->
+
+  <!-- ===== PRODUCT TOP OVERLAP FIX ===== -->
+  <style>
+    /* Contain the top block so nothing inside it paints over later sections */
+    .product-top { position: relative; overflow: hidden; z-index: 1; }
+    .product-top::after { content: ""; display: block; clear: both; }
+
+    /* Single product image: stays inside its column */
+    .product-image-wrap img { display: block; max-width: 100%; height: auto; }
+
+    /* Stop the title / brochure box from following the scroll over the tables */
+    .sticky-product-info { position: static !important; top: auto !important; }
+
+    /* Later sections always sit below the top block */
+    .uk-section { position: relative; z-index: 0; }
+    #product-models-heading { scroll-margin-top: 100px; }
+  </style>
+  <!-- ===== END PRODUCT TOP OVERLAP FIX ===== -->
+
   <!-- ===== MULTI-LANGUAGE SWITCHER ===== -->
   <style>
     #mw-lang-wrap{position:relative;display:inline-flex;align-items:center;margin-left:10px;z-index:99999}
@@ -849,9 +869,9 @@
         <div class="uk-container">
           <div uk-grid>
             <div class="uk-width-3-5@m">
-              <div uk-slideshow="animation: fade; min-height:70; max-height: 600; draggable: false">
+              <div class="product-image-wrap">
                 <img
-                  src="../../../images/Spl Collage.png"
+                  src="../../../images/Industrial Motor and Gearbox Components.png"
                   alt="Mecwin industrial application motors and special purpose BLDC motors"
                   class="js-product-main-image"
                   width="800"
@@ -859,7 +879,6 @@
                   loading="eager"
                   decoding="async"
                 />
-                <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-marginu uk-hidden@m"></ul>
               </div>
             </div>
 
@@ -971,68 +990,8 @@
               </table>
             </div>
 
-            <div style="border: 1px solid #ccc; max-width: 320px; display: flex; flex-direction: column">
-              <div style="display: flex; justify-content: center; align-items: center; padding: 8px">
-                <img
-                  src="../../../images/special_purpose3.png"
-                  alt="Mecwin PMSM motor for industrial application"
-                  width="300"
-                  height="220"
-                  style="max-width: 100%; height: auto; display: block"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-
-              <table style="width: 100%; border-collapse: collapse; font-size: 0.75rem; margin: 0; padding: 0">
-                <caption class="uk-hidden">PMSM motor model 1 specifications</caption>
-                <tr style="background: #003861; font-weight: bold; text-align: center; color: #fff">
-                  <td style="border: 1px solid #ccc; padding: 5px">Parameter</td>
-                  <td style="border: 1px solid #ccc; padding: 5px">Specification</td>
-                </tr>
-                <tr><td style="border: 1px solid #ccc; padding: 5px">Temperature Range</td><td style="border: 1px solid #ccc; text-align: center">-15° – 60° C</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 5px">Max Efficiency</td><td style="border: 1px solid #ccc; text-align: center">90%</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 5px">Speed</td><td style="border: 1px solid #ccc; text-align: center">1500 rpm</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 5px">Torque</td><td style="border: 1px solid #ccc; text-align: center">9 Nm</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 5px">Output Power</td><td style="border: 1px solid #ccc; text-align: center">1.2 kW</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 5px">Max AC Current</td><td style="border: 1px solid #ccc; text-align: center">5.00 A</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 5px">DC Voltage</td><td style="border: 1px solid #ccc; text-align: center">415 V</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 5px">Motor Type</td><td style="border: 1px solid #ccc; text-align: center">PMSM</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 5px">Description</td><td style="border: 1px solid #ccc; text-align: center">Particular</td></tr>
-              </table>
-            </div>
-
-            <div style="border: 1px solid #ccc; max-width: 320px; display: flex; flex-direction: column">
-              <div style="display: flex; justify-content: center; align-items: center; padding: 8px">
-                <img
-                  src="../../../images/special_purpose4.png"
-                  alt="Mecwin PMSM motor variant for industrial application"
-                  width="300"
-                  height="220"
-                  style="max-width: 100%; height: auto; display: block"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-
-              <table style="width: 100%; border-collapse: collapse; font-size: 0.75rem; margin: 0; padding: 0">
-                <caption class="uk-hidden">PMSM motor model 2 specifications</caption>
-                <tr style="background: #003861; font-weight: bold; text-align: center; color: #fff">
-                  <td style="border: 1px solid #ccc; padding: 5px">Parameter</td>
-                  <td style="border: 1px solid #ccc; padding: 5px">Specification</td>
-                </tr>
-                <tr><td style="border: 1px solid #ccc; padding: 5px">Temperature Range</td><td style="border: 1px solid #ccc; text-align: center">-15° – 60° C</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 5px">Max Efficiency</td><td style="border: 1px solid #ccc; text-align: center">90%</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 5px">Speed</td><td style="border: 1px solid #ccc; text-align: center">1500 rpm</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 5px">Torque</td><td style="border: 1px solid #ccc; text-align: center">9 Nm</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 5px">Output Power</td><td style="border: 1px solid #ccc; text-align: center">1.2 kW</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 5px">Max AC Current</td><td style="border: 1px solid #ccc; text-align: center">5.00 A</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 5px">DC Voltage</td><td style="border: 1px solid #ccc; text-align: center">380 V</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 5px">Motor Type</td><td style="border: 1px solid #ccc; text-align: center">PMSM</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 5px">Description</td><td style="border: 1px solid #ccc; text-align: center">Particular</td></tr>
-              </table>
-            </div>
-
+            
+            
             <div style="border: 1px solid #ccc; max-width: 320px; display: flex; flex-direction: column">
               <div style="display: flex; justify-content: center; align-items: center; padding: 8px">
                 <img
@@ -1067,36 +1026,7 @@
               </table>
             </div>
 
-            <div style="border: 1px solid #ccc; max-width: 320px; display: flex; flex-direction: column">
-              <div style="display: flex; justify-content: center; align-items: center; padding: 8px">
-                <img
-                  src="../../../images/special_purpose5.png"
-                  alt="Mecwin PMDC motor for industrial application"
-                  width="300"
-                  height="220"
-                  style="max-width: 100%; height: auto; display: block"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-
-              <table style="width: 100%; border-collapse: collapse; font-size: 0.75rem; margin: 0; padding: 0">
-                <caption class="uk-hidden">PMDC motor specifications</caption>
-                <tr style="background: #003861; font-weight: bold; text-align: center; color: #fff">
-                  <td style="border: 1px solid #ccc; padding: 5px">Parameter</td>
-                  <td style="border: 1px solid #ccc; padding: 5px">Specification</td>
-                </tr>
-                <tr><td style="border: 1px solid #ccc; padding: 12px">Motor Type</td><td style="border: 1px solid #ccc; text-align: center">PMDC</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 12.5px">DC Voltage</td><td style="border: 1px solid #ccc; text-align: center">12 / 24 V</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 13px">AC Current (Max)</td><td style="border: 1px solid #ccc; text-align: center">5.00 A</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 12px">Output Power</td><td style="border: 1px solid #ccc; text-align: center">30 W</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 12px">Torque</td><td style="border: 1px solid #ccc; text-align: center">1.2 Nm</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 12px">Speed</td><td style="border: 1px solid #ccc; text-align: center">3000 RPM</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 12px">Max Efficiency</td><td style="border: 1px solid #ccc; text-align: center">91%</td></tr>
-                <tr><td style="border: 1px solid #ccc; padding: 12px">Temperature Range</td><td style="border: 1px solid #ccc; text-align: center">−15° to 60° C</td></tr>
-              </table>
-            </div>
-          </div>
+                      </div>
         </div>
       </section>
 

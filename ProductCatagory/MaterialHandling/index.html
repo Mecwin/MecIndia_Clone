@@ -144,7 +144,7 @@
         "@type": "ItemList",
         "name": "Material Handling & Off Highway Products",
         "itemListOrder": "https://schema.org/ItemListOrderAscending",
-        "numberOfItems": 3,
+        "numberOfItems": 4,
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -163,6 +163,12 @@
             "position": 3,
             "url": "https://www.mecwinindia.com/ProductCatagory/MaterialHandling/Products/TippingApplication.html",
             "name": "Motors for Tipping Application"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "url": "https://www.mecwinindia.com/ProductCatagory/MaterialHandling/Products/SpecialPurposeMotors.html",
+            "name": "Industrial Application Motors"
           }
         ]
       }
@@ -900,6 +906,15 @@
             >
               Tipping Applications
             </button>
+
+            <button
+              id="filter-industrial-application"
+              type="button"
+              style="padding: 8px 16px; font-size: 14px; border: 1px solid #ccc; background: #f0f0f0; border-radius: 4px; cursor: pointer; color: black"
+              onclick="filterProducts('industrial-application')"
+            >
+              Industrial Application
+            </button>
           </div>
 
           <div
@@ -993,6 +1008,34 @@
               </a>
             </article>
 
+            <article
+              class="product-card"
+              data-category="industrial-application"
+              style="width: 100%; max-width: 280px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column"
+            >
+              <a
+                href="../MaterialHandling/Products/SpecialPurposeMotors.html"
+                style="text-decoration: none; color: inherit; display: flex; flex-direction: column; flex: 1"
+              >
+                <div style="padding: 10px">
+                  <img
+                    src="../../images/Industrial Motor and Gearbox Components.png"
+                    alt="Industrial application motors"
+                    width="260"
+                    height="180"
+                    style="width: 100%; height: 180px; object-fit: contain; border-radius: 4px"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div style="padding: 15px; display: flex; flex-direction: column; flex: 1">
+                  <h3 style="font-size: 16px; font-weight: bold; margin: 0 0 10px">Industrial Application Motors</h3>
+                  <p style="font-size: 12px; color: #999; margin: 0">Capacity: 1.5 - 3 kW</p>
+                  <p style="font-size: 12px; color: #999; margin: 0">Speed: 2000 - 3000 RPM</p>
+                  <p style="font-size: 12px; color: #999; margin: 0">Torque: 50 - 150 Nm</p>
+                </div>
+              </a>
+            </article>
 
           </div>
         </div>
