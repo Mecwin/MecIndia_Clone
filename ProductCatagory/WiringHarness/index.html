@@ -7,10 +7,7 @@
 
     <title>Wiring Harness | Automotive, Medical, Telecom | Mecwin India</title>
 
-    <meta
-      name="description"
-      content="Explore Mecwin wiring harness solutions for automotive, medical equipment, home appliances, telecom, robotics, manufacturing, and aerospace applications. Discover precision-engineered harnesses, catalogue downloads, and advanced manufacturing capabilities."
-    />
+    <meta name="description" content="Explore Mecwin wiring harness solutions for telecom, aerospace and other applications." />
 
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="author" content="Mecwin Technologies India Pvt. Ltd." />
@@ -20,33 +17,20 @@
     <link rel="canonical" href="https://www.mecwinindia.com/ProductCatagory/WiringHarness/index.html" />
     <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon_io/favicon-32x32.png" />
 
-    <meta name="dynamic-search:object-id" content="6230" />
-    <meta name="dynamic-search:object-type" content="object" />
-    <meta name="dynamic-search:object-sub-type" content="object" />
-    <meta name="dynamic-search:image" content="49429" />
-    <meta name="dynamic-search:content_category" content="machine" />
-    <meta name="dynamic-search:market" content="6877" />
-
     <!-- Open Graph -->
     <meta property="og:locale" content="en_IN" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Mecwin" />
-    <meta property="og:title" content="Wiring Harness Solutions | Automotive, Medical, Telecom & Industrial Harnesses | Mecwin India" />
-    <meta
-      property="og:description"
-      content="Discover Mecwin wiring harness solutions for automotive, medical, home appliances, telecom, robotics, manufacturing, and aerospace applications."
-    />
+    <meta property="og:title" content="Wiring Harness | Automotive, Medical, Telecom | Mecwin India" />
+    <meta property="og:description" content="Explore Mecwin wiring harness solutions for telecom, aerospace and other applications." />
     <meta property="og:url" content="https://www.mecwinindia.com/ProductCatagory/WiringHarness/index.html" />
     <meta property="og:image" content="https://www.mecwinindia.com/images/wireharnessmain.png" />
     <meta property="og:image:alt" content="Mecwin wiring harness solutions" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Wiring Harness Solutions | Automotive, Medical, Telecom & Industrial Harnesses | Mecwin India" />
-    <meta
-      name="twitter:description"
-      content="Explore Mecwin wiring harness solutions for automotive, medical, home appliances, telecom, robotics, manufacturing, and aerospace applications."
-    />
+    <meta name="twitter:title" content="Wiring Harness | Automotive, Medical, Telecom | Mecwin India" />
+    <meta name="twitter:description" content="Explore Mecwin wiring harness solutions for telecom, aerospace and other applications." />
     <meta name="twitter:image" content="https://www.mecwinindia.com/images/wireharnessmain.png" />
     <meta name="twitter:image:alt" content="Mecwin wiring harness solutions" />
 
@@ -84,206 +68,60 @@
     </script>
 
     <style>
-      .category-hero {
-        padding: 20px 0 30px;
-      }
-
-      .category-hero-wrap {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 40px;
-        flex-wrap: wrap;
-      }
-
-      .category-hero-image-col,
-      .category-hero-content-col {
-        flex: 1 1 420px;
-      }
-
-      .category-hero-main-image {
-        width: 90%;
-        max-width: 750px;
-        height: auto;
-        max-height: 450px;
-        object-fit: contain;
-        display: block;
+      /* ===== Image link cards (new) ===== */
+      .harness-gallery {
+        max-width: 1200px;
         margin: 0 auto;
-      }
-
-      .category-card-title {
-        color: #003861;
-      }
-
-      .section-heading {
-        font-size: 24px;
-        font-weight: 700;
-        margin-bottom: 20px;
-        color: #111;
-      }
-
-      .product-grid {
+        padding: 24px 24px 56px;
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
-        justify-content: flex-start;
+        gap: 32px;
+        justify-content: center;
         align-items: stretch;
       }
-
-      .product-card {
-        width: 100%;
-        max-width: 280px;
-        border: 1px solid #ddd;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
+      .harness-gallery-card {
+        flex: 1 1 460px;
+        max-width: 560px;
+        border: 1px solid #dde8f0;
+        border-radius: 10px;
         overflow: hidden;
+        background: #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         display: flex;
         flex-direction: column;
-        background: #fff;
-      }
-
-      .product-card a {
         text-decoration: none;
         color: inherit;
-        display: flex;
-        flex-direction: column;
-        flex: 1;
+        transition: box-shadow 0.2s ease, transform 0.2s ease;
       }
-
-      .product-card img {
+      .harness-gallery-card:hover,
+      .harness-gallery-card:focus-visible {
+        box-shadow: 0 8px 22px rgba(11, 60, 96, 0.22);
+        transform: translateY(-3px);
+        text-decoration: none;
+        color: inherit;
+      }
+      .harness-gallery-card img {
         width: 100%;
-        height: 180px;
-        object-fit: contain;
+        height: auto;
         display: block;
-        background: #fff;
       }
-
-      .product-card-body {
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-      }
-
-      .product-card-body h3 {
+      .harness-gallery-card .harness-gallery-title {
+        padding: 14px 18px;
         font-size: 16px;
         font-weight: 700;
-        margin: 0 0 10px;
-        color: #111;
+        color: #0b3c60;
+        border-top: 1px solid #dde8f0;
+        background: #f4f8fb;
       }
-
-      .product-card-body p {
-        font-size: 12px;
-        color: #666;
-        margin: 0;
-        line-height: 1.6;
+      .page-content-area {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 24px 24px 80px;
+        min-height: 360px;
       }
-
-      .filter-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-bottom: 20px;
-      }
-
-      .filter-button {
-        padding: 8px 16px;
-        font-size: 14px;
-        border: 1px solid #ccc;
-        background: #f0f0f0;
-        border-radius: 4px;
-        cursor: pointer;
-        color: #000;
-      }
-
-      .capability-section {
-        padding: 20px 0;
-        background: url("../../images/wiringharnerss1.jpg") no-repeat center center / cover;
-        position: relative;
-      }
-
-      .capability-section .section-heading {
-        color: #fff;
-        margin-bottom: 30px;
-      }
-
-      .capability-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: flex-start;
-        align-items: stretch;
-      }
-
-      .capability-card {
-        flex: 1 1 calc(20% - 16px);
-        max-width: calc(20% - 16px);
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        background: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        padding: 15px;
-        text-align: center;
-        min-width: 200px;
-      }
-
-      .capability-card h3 {
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 8px;
-      }
-
-      .capability-card p {
-        font-size: 12px;
-        color: #666;
-        margin: 0;
-        line-height: 1.6;
-      }
-
-      .why-choose-section {
-        padding: 50px 0;
-        background: #06486f;
-      }
-
-      .why-choose-section h2 {
-        font-size: 24px;
-        font-weight: 700;
-        margin-bottom: 30px;
-        color: #fff;
-      }
-
-      .why-choose-section ul {
-        list-style-type: disc;
-        padding-left: 20px;
-        color: #fff;
-        font-size: 14px;
-        line-height: 1.8;
-        margin: 0;
-      }
-
-      @media (max-width: 1024px) {
-        .capability-card {
-          flex: 1 1 calc(33.33% - 16px);
-          max-width: calc(33.33% - 16px);
-        }
-      }
-
-      @media (max-width: 768px) {
-        .capability-card {
-          flex: 1 1 calc(50% - 16px);
-          max-width: calc(50% - 16px);
-        }
-
-        .category-hero-main-image {
-          width: 100%;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .capability-card {
-          flex: 1 1 100%;
-          max-width: 100%;
-        }
+      @media (prefers-reduced-motion: reduce) {
+        .harness-gallery-card { transition: none; }
+        .harness-gallery-card:hover { transform: none; }
       }
     </style>
 
@@ -308,86 +146,25 @@
     <!-- Structured Data: Breadcrumb -->
     <script type="application/ld+json">
       {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Homepage",
-            "item": "https://www.mecwinindia.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Wiring Harness",
-            "item": "https://www.mecwinindia.com/ProductCatagory/WiringHarness/index.html"
-          }
-        ]
-      }
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Homepage",
+      "item": "https://www.mecwinindia.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Wiring Harness",
+      "item": "https://www.mecwinindia.com/ProductCatagory/WiringHarness/index.html"
+    }
+  ]
+}
     </script>
 
-    <!-- Structured Data: Collection Page -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        "name": "Wiring Harness",
-        "url": "https://www.mecwinindia.com/ProductCatagory/WiringHarness/index.html",
-        "description": "Mecwin wiring harness solutions for automotive, medical, home appliances, telecom, robotics, manufacturing, and aerospace applications.",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Mecwin"
-        }
-      }
-    </script>
-
-    <!-- Structured Data: ItemList -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": "Wiring Harness Products",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "url": "https://www.mecwinindia.com/ProductCatagory/WiringHarness/Products/HarnessforAutomotive.html",
-            "name": "Harness for Automotive"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "url": "https://www.mecwinindia.com/ProductCatagory/WiringHarness/Products/HarnessforMedical.html",
-            "name": "Harness for Medical Equipment"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "url": "https://www.mecwinindia.com/ProductCatagory/WiringHarness/Products/HarnessforHomeAppliances.html",
-            "name": "Harness for Home Appliances"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "url": "https://www.mecwinindia.com/ProductCatagory/WiringHarness/Products/HarnessforRobotics&Manufacturing.html",
-            "name": "Harness for Robotics and Manufacturing"
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
-            "url": "https://www.mecwinindia.com/ProductCatagory/WiringHarness/Products/HarnessforTelecom&IT.html",
-            "name": "Harness for Telecom and IT"
-          },
-          {
-            "@type": "ListItem",
-            "position": 6,
-            "url": "https://www.mecwinindia.com/ProductCatagory/WiringHarness/Products/HarnessforAerospaceIndustry.html",
-            "name": "Harness for Aerospace Industry"
-          }
-        ]
-      }
-    </script>
   <!-- ===== NAVBAR NO-OVERLAP LAYOUT FIX ===== -->
   <style>
     @media (min-width: 1200px) {
@@ -397,7 +174,6 @@
         flex-wrap: nowrap;
         gap: 8px;
       }
-      /* Let the menu flow in the row instead of being absolutely centered */
       .nav-header-main > .uk-navbar-center {
         position: static !important;
         transform: none !important;
@@ -407,7 +183,6 @@
         flex: 1 1 auto;
         min-width: 0;
       }
-      /* Items sit on one centered line; wrap tidily only if a translation is too long */
       .nav-header-main > .uk-navbar-center .nav-header-main-menu {
         justify-content: center;
         align-items: center;
@@ -426,7 +201,6 @@
       .nav-header-main > .uk-navbar-right {
         flex: 0 0 auto;
       }
-      /* Compact the right-side tools so the menu has room for one line */
       .nav-header-main .change-region:empty { display: none; }
       .nav-header-main > .uk-navbar-right > .uk-navbar-item { padding: 0 6px; }
       #storeSearchInput { width: 150px !important; }
@@ -670,112 +444,49 @@
                   <ul class="uk-list uk-list-inline mega-menu-menu">
             <li>
                       <a href="../../ProductCatagory/Agriculture/index.html">
-                        <img
-                          src="../../images/ICONS/agriculture.png"
-                          alt="Agriculture icon"
-                          width="25"
-                          height="25"
-                          loading="lazy"
-                          decoding="async"
-                          style="vertical-align: middle; margin-right: 5px"
-                        />
+                        <img src="../../images/ICONS/agriculture.png" alt="Agriculture icon" width="25" height="25" loading="lazy" decoding="async" style="vertical-align: middle; margin-right: 5px" />
                         Agriculture
                       </a>
                     </li>
             <li>
                       <a href="../../ProductCatagory/AerospaceDefence/index.html">
-                        <img
-                          src="../../images/ICONS/aerospace-engineering.png"
-                          alt="Aerospace and defence motors icon"
-                          width="25"
-                          height="25"
-                          loading="lazy"
-                          decoding="async"
-                          style="vertical-align: middle; margin-right: 5px"
-                        />
+                        <img src="../../images/ICONS/aerospace-engineering.png" alt="Aerospace and defence motors icon" width="25" height="25" loading="lazy" decoding="async" style="vertical-align: middle; margin-right: 5px" />
                         Aerospace and Defence Motors
                       </a>
                     </li>
             <li>
                       <a href="../../ProductCatagory/IndustrialAutomation/index.html">
-                        <img
-                          src="../../images/ICONS/industrial-automation.png"
-                          alt="Industrial motors icon"
-                          width="25"
-                          height="25"
-                          loading="lazy"
-                          decoding="async"
-                          style="vertical-align: middle; margin-right: 5px"
-                        />
+                        <img src="../../images/ICONS/industrial-automation.png" alt="Industrial motors icon" width="25" height="25" loading="lazy" decoding="async" style="vertical-align: middle; margin-right: 5px" />
                         Industrial Motors
                       </a>
                     </li>
             <li>
                       <a href="../../ProductCatagory/MaterialHandling/index.html">
-                        <img
-                          src="../../images/ICONS/cargo-handling.png"
-                          alt="Material handling icon"
-                          width="25"
-                          height="25"
-                          loading="lazy"
-                          decoding="async"
-                          style="vertical-align: middle; margin-right: 5px"
-                        />
-                        Material Handling & Off Highway
+                        <img src="../../images/ICONS/cargo-handling.png" alt="Material handling icon" width="25" height="25" loading="lazy" decoding="async" style="vertical-align: middle; margin-right: 5px" />
+                        Material Handling &amp; Off Highway
                       </a>
                     </li>
             <li>
                       <a href="../../ProductCatagory/Automotive/index.html">
-                        <img
-                          src="../../images/ICONS/robotic-process-automation.png"
-                          alt="Automotive icon"
-                          width="25"
-                          height="25"
-                          loading="lazy"
-                          decoding="async"
-                          style="vertical-align: middle; margin-right: 5px"
-                        />
+                        <img src="../../images/ICONS/robotic-process-automation.png" alt="Automotive icon" width="25" height="25" loading="lazy" decoding="async" style="vertical-align: middle; margin-right: 5px" />
                         Automotive
                       </a>
-                    </li>            <li>
+                    </li>
+            <li>
                       <a href="https://www.mecwinindia.com/ProductCatagory/WiringHarness/index.html">
-                        <img
-                          src="../../images/ICONS/wire.png"
-                          alt="Wiring Harness icon"
-                          width="25"
-                          height="25"
-                          loading="lazy"
-                          decoding="async"
-                          style="vertical-align: middle; margin-right: 5px;"
-                        />
+                        <img src="../../images/ICONS/wire.png" alt="Wiring Harness icon" width="25" height="25" loading="lazy" decoding="async" style="vertical-align: middle; margin-right: 5px;" />
                         Wiring Harness
                       </a>
                     </li>
             <li>
                       <a href="../../ProductCatagory/IoT/index.html">
-                        <img
-                          src="../../images/ICONS/internet-of-things.png"
-                          alt="IoT icon"
-                          width="25"
-                          height="25"
-                          loading="lazy"
-                          decoding="async"
-                          style="vertical-align: middle; margin-right: 5px"
-                        />
+                        <img src="../../images/ICONS/internet-of-things.png" alt="IoT icon" width="25" height="25" loading="lazy" decoding="async" style="vertical-align: middle; margin-right: 5px" />
                         IoT/SCADA
                       </a>
                     </li>
             <li>
                       <a href="../../ProductCatagory/AIML/index.html">
-                        <img
-                          src="../../images/ICONS/artificial-intelligence.png"
-                          alt="AI/ML icon"
-                          width="25"
-                          height="25"
-                          loading="lazy"
-                          decoding="async"
-                          style="vertical-align: middle; margin-right: 5px"
-                        />
+                        <img src="../../images/ICONS/artificial-intelligence.png" alt="AI/ML icon" width="25" height="25" loading="lazy" decoding="async" style="vertical-align: middle; margin-right: 5px" />
                         AI/ML
                       </a>
                     </li>
@@ -786,8 +497,6 @@
           </div>
         </div>
 
-
-        
         <div tabindex="0" class="mega-menu company-menu link_2208 focusable">
           <div class="uk-align-center uk-container uk-padding uk-padding-remove-bottom">
             <div class="mega-menu-primary">
@@ -801,7 +510,7 @@
                   <ul class="uk-list uk-list-inline mega-menu-menu">
                     <li><a href="../../About/index.html">About Us</a></li>
                     <li><a href="../../contact/company-contacts.html">Contacts</a></li>
-<li><a href="../../About/Mecwin/CsrActivities.html">CSR Activities</a></li>
+                    <li><a href="../../About/Mecwin/CsrActivities.html">CSR Activities</a></li>
                   </ul>
                 </div>
               </div>
@@ -809,7 +518,6 @@
           </div>
         </div>
 
-        
         <div tabindex="0" class="mega-menu company-menu link_5028 focusable">
           <div class="uk-align-center uk-container uk-padding uk-padding-remove-bottom">
             <div class="mega-menu-primary">
@@ -829,7 +537,7 @@
           </div> 
         </div>
 
-              </div>
+      </div>
     </header>
 
     <aside class="nav-mobile" id="offcanvas-nav-primary" uk-offcanvas="flip: true; overlay: true">
@@ -887,8 +595,9 @@
             <li><a href="../../ProductCatagory/Agriculture/index.html">Agriculture</a></li>
             <li><a href="../../ProductCatagory/AerospaceDefence/index.html">Aerospace and Defence Motors</a></li>
             <li><a href="../../ProductCatagory/IndustrialAutomation/index.html">Industrial Motors</a></li>
-            <li><a href="../../ProductCatagory/MaterialHandling/index.html">Material Handling & Off Highway</a></li>
-            <li><a href="../../ProductCatagory/Automotive/index.html">Automotive</a></li>            <li><a href="../../ProductCatagory/WiringHarness/index.html">Wiring Harness</a></li>
+            <li><a href="../../ProductCatagory/MaterialHandling/index.html">Material Handling &amp; Off Highway</a></li>
+            <li><a href="../../ProductCatagory/Automotive/index.html">Automotive</a></li>
+            <li><a href="../../ProductCatagory/WiringHarness/index.html">Wiring Harness</a></li>
             <li><a href="../../ProductCatagory/IoT/index.html">IoT</a></li>
           </ul>
         </div>
@@ -914,7 +623,7 @@
           <ul class="uk-list nav-mobile-menu nav-mobile-menu--arrow">
             <li><a href="../../About/index.html">About Us</a></li>
             <li><a href="../../contact/company-contacts.html">Contacts</a></li>
-<li><a href="../../About/Mecwin/CsrActivities.html">CSR Activities</a></li>
+            <li><a href="../../About/Mecwin/CsrActivities.html">CSR Activities</a></li>
           </ul>
         </div>
       </div>
@@ -929,295 +638,20 @@
           </ul>
         </div>
       </section>
- 
-  <!-- MAIN CONTENT -->
-  <div style="max-width:1200px;margin:0 auto;padding:48px 24px;display:flex;gap:36px;flex-wrap:wrap;">
- 
-    <!-- SIDEBAR -->
-    <aside style="width:260px;flex-shrink:0;">
-  <div style="background:#f4f8fb;border-radius:10px;overflow:hidden;border:1px solid #dde8f0;">
-    
-    <ul style="list-style:none;margin:0;padding:0;">
-      
-      <!-- HEADER (ALWAYS BLUE) -->
-      <li>
-        <a href="../../ProductCatagory/WiringHarness/index.html"
-           style="display:block;padding:16px 20px;text-decoration:none;
-                  color:#fff;font-size:16px;font-weight:600;
-                  background:#1673ad;border-radius:10px 10px 0 0;">
-           FTTH Products
+
+      <div class="harness-gallery">
+         <a class="harness-gallery-card" href="Products/aerospace.html" aria-label="Harness for Aerospace Industry">
+        <img src="../../images/Sunset Airfield Logistics Panorama (1).png"c:\Users\udayh\Downloads\Sunset Airfield Logistics Panorama (1).png alt="Aerospace wiring harness" loading="lazy" />
+        <span class="harness-gallery-title">Harness for Aerospace Industry</span>
+       
         </a>
-      </li>
-
-      <!-- MENU ITEMS -->
-      <li style="border-bottom:1px solid #dde8f0;">
-        <a onclick="setActive(this)" href="../../ProductCatagory/WiringHarness/Products/plc.html"
-           style="display:block;padding:14px 20px;text-decoration:none;
-                  color:#1a2e4a;font-size:14px;font-weight:500;background:#fff;">
-           PLC Splitter
-        </a>
-      </li>
-
-      <li style="border-bottom:1px solid #dde8f0;">
-        <a onclick="setActive(this)" href="../../ProductCatagory/WiringHarness/Products/fiber-access-terminal.html"
-           style="display:block;padding:14px 20px;text-decoration:none;
-                  color:#1a2e4a;font-size:14px;font-weight:500;background:#fff;">
-           Fiber Access Terminal
-        </a>
-      </li>
-
-      <li style="border-bottom:1px solid #dde8f0;">
-        <a onclick="setActive(this)" href="../../ProductCatagory/WiringHarness/Products/fiber-management-system.html"
-           style="display:block;padding:14px 20px;text-decoration:none;
-                  color:#1a2e4a;font-size:14px;font-weight:500;background:#fff;">
-           Fiber Management System
-        </a>
-      </li>
-
-      <li style="border-bottom:1px solid #dde8f0;">
-        <a onclick="setActive(this)" href="../../ProductCatagory/WiringHarness/Products/joint-closure-jc-96f-flat.html"
-           style="display:block;padding:14px 20px;text-decoration:none;
-                  color:#1a2e4a;font-size:14px;font-weight:500;background:#fff;">
-           Joint Closure (JC 96F FLAT)
-        </a>
-      </li>
-
-      <li style="border-bottom:1px solid #dde8f0;">
-        <a onclick="setActive(this)" href="../../ProductCatagory/WiringHarness/Products/fiber-patch-cords-pigtails.html"
-           style="display:block;padding:14px 20px;text-decoration:none;
-                  color:#1a2e4a;font-size:14px;font-weight:500;background:#fff;">
-           Fiber Patch Cords / Pigtails
-        </a>
-      </li>
-
-      <li>
-        <a onclick="setActive(this)" href="../../ProductCatagory/WiringHarness/Products/dome-splice-closure.html"
-           style="display:block;padding:14px 20px;text-decoration:none;
-                  color:#1a2e4a;font-size:14px;font-weight:500;background:#fff;">
-           Dome Splice Closure
-        </a>
-      </li>
-
-    </ul>
-
-  </div>
-</aside>
-
- 
-      <!-- Brochure Card -->
-      <!--<div style="background:#fff;border-radius:8px;border:1px solid #dde8f0;margin-top:24px;overflow:hidden;">
-        <div style="background:#1a2e4a;padding:16px 20px;">
-          <h3 style="color:#fff;margin:0;font-size:15px;font-weight:700;font-family:'Montserrat',sans-serif;">Brochure</h3>
-        </div>
-        <div style="padding:20px;">
-          <p style="color:#555;font-size:13px;line-height:1.6;margin:0 0 16px;">Download our product brochure for detailed specifications and information.</p>
-          <a href="#" style="display:inline-flex;align-items:center;gap:8px;background:#0072bc;color:#fff;text-decoration:none;padding:10px 18px;border-radius:4px;font-size:13px;font-weight:600;font-family:'Montserrat',sans-serif;">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download PDF
-          </a>
-        </div>
-      </div>-->
-    </aside>
- 
-    <!-- MAIN AREA -->
-   <div style="flex:1;min-width:0;">
-
-  <!-- FTTH INTRO SECTION -->
-  <div style="display:flex;gap:32px;flex-wrap:wrap;margin-bottom:48px;align-items:flex-start;">
-
-    <!-- Left Content -->
-    <div style="flex:1;min-width:280px;">
-
-      <h2 style="font-family:'Montserrat',sans-serif;font-size:26px;font-weight:700;color:#1a2e4a;margin:0 0 8px;">
-        FTTH Solutions: Next Generation Fiber Connectivity
-      </h2>
-      <div style="width:48px;height:3px;background:#0072bc;border-radius:2px;margin-bottom:24px;"></div>
-
-      <p style="color:#444;font-size:15px;line-height:1.8;margin:0 0 16px;">
-        Mecwin FTTH (Fiber to the Home) solutions deliver ultra-fast, high-capacity internet directly to homes and businesses using advanced optical fiber technology. By replacing traditional copper infrastructure with end-to-end fiber connectivity, Mecwin ensures superior speed, stability, and long-term network performance.
-      </p>
-
-      <p style="color:#444;font-size:15px;line-height:1.8;margin:0;">
-        Engineered for today’s data-driven world, Mecwin FTTH enables seamless ultra-HD streaming, lag-free video conferencing, cloud access, and high-performance gaming, making it ideal for both residential and enterprise environments.
-      </p>
-
-    </div>
-
-    <!-- Right Image -->
-    <div style="width:300px;flex-shrink:0;margin-left:auto;">
-      <div style="border:1px solid #dde8f0;border-radius:8px;overflow:hidden;background:#f9fbfd;">
-        <img
-          src="../../images/FTTH.png"
-          alt="FTTH Solutions"
-          style="width:100%;height:260px;object-fit:cover;display:block;"
-        />
+      <a class="harness-gallery-card" href="Products/telecom.html" aria-label="Harness for Telecom and IT">
+        <img src="../../images/Telecom Solutions Tower and Equipment (2).png" alt="Telecom &amp; Communication Solutions wiring harness" loading="lazy" />
+        <span class="harness-gallery-title">Harness for Telecom and IT</span>
+      </a>
+     
       </div>
-    </div>
 
-  </div>
-
-  <!-- Industry Benefits -->
-  <div style="margin-bottom:40px;">
-    <h2 style="font-family:'Montserrat',sans-serif;font-size:22px;font-weight:700;color:#1a2e4a;margin:0 0 6px;">
-      Industry Benefits
-    </h2>
-    <div style="width:40px;height:3px;background:#0072bc;border-radius:2px;margin-bottom:20px;"></div>
-
-    <p style="color:#444;font-size:15px;line-height:1.8;margin:0 0 14px;">
-      Mecwin FTTH solutions deliver strong value across modern telecommunications and digital infrastructure:
-    </p>
-
-    <ul style="list-style:none;margin:0;padding:0;">
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;"><strong>High-Speed Connectivity:</strong> Enables gigabit broadband for residential, commercial, and enterprise users</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;"><strong>Enhanced Network Reliability:</strong> Fiber infrastructure minimizes downtime and signal degradation</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;"><strong>Scalable Deployment:</strong> Easily expandable to support growing user demands and smart city projects</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;"><strong>Low Latency Performance:</strong> Ideal for real-time applications like cloud computing, IoT, and 5G backhaul</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;"><strong>Future-Ready Infrastructure:</strong> Supports evolving technologies such as AI, edge computing, and automation</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;"><strong>Cost Efficiency:</strong> Lower maintenance and longer lifecycle compared to copper networks</span>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Materials -->
-  <div style="margin-bottom:40px;">
-    <h2 style="font-family:'Montserrat',sans-serif;font-size:22px;font-weight:700;color:#1a2e4a;margin:0 0 6px;">
-      Materials
-    </h2>
-    <div style="width:40px;height:3px;background:#0072bc;border-radius:2px;margin-bottom:20px;"></div>
-
-    <p style="color:#444;font-size:15px;line-height:1.8;margin:0 0 14px;">
-      Mecwin products are built using high-quality, industry-grade materials to ensure durability and performance:
-    </p>
-
-    <ul style="list-style:none;margin:0;padding:0;">
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;"><strong>Optical Fiber (Glass Core):</strong> Ultra-pure silica for high-speed signal transmission</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;"><strong>LSZH / HDPE Jackets:</strong> Flame-retardant and environmentally safe outer protection</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;"><strong>Polycarbonate / ABS Enclosures:</strong> UV-resistant and weatherproof for outdoor installations</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;"><strong>Stainless Steel Components:</strong> Corrosion-resistant for long-term reliability</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;"><strong>Ceramic Ferrules (Connectors):</strong> Precision alignment for minimal signal loss</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;"><strong>Rubber Gaskets &amp; Seals:</strong> Protection against dust, water, and environmental factors</span>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Power Systems -->
-  <div style="margin-bottom:40px;">
-    <h2 style="font-family:'Montserrat',sans-serif;font-size:22px;font-weight:700;color:#1a2e4a;margin:0 0 6px;">
-      Power Systems
-    </h2>
-    <div style="width:40px;height:3px;background:#0072bc;border-radius:2px;margin-bottom:20px;"></div>
-
-    <p style="color:#444;font-size:15px;line-height:1.8;margin:0 0 14px;">
-      Reliable power integration is essential for FTTH and telecom networks:
-    </p>
-
-    <ul style="list-style:none;margin:0;padding:0;">
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;"><strong>Passive Network Design:</strong> Most FTTH components (splitters, fiber cables) require no power</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;"><strong>ONT Power Supply:</strong> Customer-end devices powered via standard AC with battery backup options</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;"><strong>Central Office Power:</strong> Redundant power systems ensure uninterrupted service</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;"><strong>5G Integration Support:</strong> Fiber backbone enables efficient power usage in small cells and antennas</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;"><strong>Energy Efficiency:</strong> Reduced power consumption compared to legacy copper-based systems</span>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Parts / Components -->
-  <div style="margin-bottom:40px;">
-    <h2 style="font-family:'Montserrat',sans-serif;font-size:22px;font-weight:700;color:#1a2e4a;margin:0 0 6px;">
-      Parts / Components
-    </h2>
-    <div style="width:40px;height:3px;background:#0072bc;border-radius:2px;margin-bottom:20px;"></div>
-
-    <p style="color:#444;font-size:15px;line-height:1.8;margin:0 0 14px;">
-      Mecwin offers a comprehensive range of FTTH and telecom components:
-    </p>
-
-    <ul style="list-style:none;margin:0;padding:0;">
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;">Optical Fiber Cables (Drop, ADSS, Armored)</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;">Optical Network Terminals (ONT/ONU)</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;">Fiber Distribution Boxes (FDB)</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;">Splice Closures (Dome &amp; Inline Types)</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;">Optical Splitters (PLC Splitters)</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;">Patch Cords &amp; Pigtails</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;">Adapters &amp; Connectors (SC/APC, LC, etc.)</span>
-      </li>
-      <li style="display:flex;align-items:flex-start;gap:10px;padding:10px 0;">
-        <span style="width:8px;height:8px;background:#0072bc;border-radius:50%;flex-shrink:0;margin-top:6px;"></span>
-        <span style="color:#444;font-size:14px;line-height:1.7;">Cable Management Accessories (Clamps, Trays, Ducts)</span>
-      </li>
-    </ul>
-  </div>
-
-</div>
-      
     </main>
 
     <footer class="uk-section uk-section-small footer">
@@ -1401,3 +835,4 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
 <!-- End LinkedIn Insight Tag -->
 </body>
 </html>
+
