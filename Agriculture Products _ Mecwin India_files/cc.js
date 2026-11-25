@@ -1,0 +1,1 @@
+if(console){var cookiedomainwarning='Error: The domain MECWININDIA.COM is not authorized to show the cookie banner for domain group ID d64cb82b-bece-41dd-bff1-bc0f24fcf775. Please add it to the domain group in the Cookiebot Manager to authorize the domain.';if(typeof console.warn === 'function'){console.warn(cookiedomainwarning)}else{console.log(cookiedomainwarning)}};

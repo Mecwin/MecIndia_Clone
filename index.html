@@ -95,7 +95,6 @@
         flex-wrap: nowrap;
         gap: 8px;
       }
-      /* Let the menu flow in the row instead of being absolutely centered */
       .nav-header-main > .uk-navbar-center {
         position: static !important;
         transform: none !important;
@@ -105,7 +104,6 @@
         flex: 1 1 auto;
         min-width: 0;
       }
-      /* Items sit on one centered line; wrap tidily only if a translation is too long */
       .nav-header-main > .uk-navbar-center .nav-header-main-menu {
         justify-content: center;
         align-items: center;
@@ -124,7 +122,6 @@
       .nav-header-main > .uk-navbar-right {
         flex: 0 0 auto;
       }
-      /* Compact the right-side tools so the menu has room for one line */
       .nav-header-main .change-region:empty { display: none; }
       .nav-header-main > .uk-navbar-right > .uk-navbar-item { padding: 0 6px; }
       #storeSearchInput { width: 150px !important; }
@@ -1457,6 +1454,221 @@
     opacity: 0.85;
   }
 </style>
+
+
+<!-- ===== OUR CLIENTELE SECTION ===== -->
+<section class="uk-section clientele-section" aria-labelledby="clientele-heading">
+  <div class="uk-container">
+
+    <div class="clientele-header uk-text-center">
+      <h2 id="clientele-heading" class="block-title">Our Clientele</h2>
+      <p class="clientele-sub">
+        Trusted by leading organisations across industries
+      </p>
+    </div>
+
+    <div class="clientele-grid">
+
+      <!-- AEROSPACE & DEFENCE -->
+      <div class="clientele-card">
+        <div class="clientele-card-banner">
+          <img src="./images/HomePageSlideImages/Aerospace &amp; Defence.jpeg"
+               alt="Aerospace and Defence" loading="lazy">
+          <div class="clientele-card-banner-overlay">
+            <h3>Aerospace &amp; Defence</h3>
+            <span class="clientele-arrow">&#8594;</span>
+          </div>
+        </div>
+
+        <div class="clientele-logos">
+          <img src="./images/logo_09.jpeg" alt="DRDO" loading="lazy">
+          <img src="./images/logo_11.png" alt="Bharat Electronics" loading="lazy">
+          <img src="./images/logo_07.png" alt="Jeanuvs" loading="lazy">
+          <img src="./images/logo_08.png" alt="Turbotech" loading="lazy">
+          <img src="./images/logo_01.png" alt="Larsen and Toubro" loading="lazy">
+          <img src="./images/logo_13.jpeg" alt="Indian Army" loading="lazy">
+        </div>
+      </div>
+
+      <!-- INDUSTRIAL MOTORS -->
+      <div class="clientele-card">
+        <div class="clientele-card-banner">
+          <img src="./images/MAIN.png"
+               alt="Industrial Motors" loading="lazy">
+          <div class="clientele-card-banner-overlay">
+            <h3>Industrial Motors</h3>
+            <span class="clientele-arrow">&#8594;</span>
+          </div>
+        </div>
+
+        <div class="clientele-logos">
+          <img src="./images/logo_21.png" alt="IDEX" loading="lazy">
+          <img src="./images/logo_06.png" alt="NHPC" loading="lazy">
+          <img src="./images/logo_04.jpeg" alt="Ati" loading="lazy">
+          <img src="./images/logo_12.png" alt="Industrial client" loading="lazy">
+          <img src="./images/logo_27.jpeg" alt="LUKAS" loading="lazy">
+          <img src="./images/logo_28.png" alt="COGNITO" loading="lazy">
+        </div>
+      </div>
+
+      <!-- AUTOMOTIVE -->
+      <div class="clientele-card">
+        <div class="clientele-card-banner">
+          <img src="./images/EV.png"
+               alt="Automotive" loading="lazy">
+          <div class="clientele-card-banner-overlay">
+            <h3>Automotive</h3>
+            <span class="clientele-arrow">&#8594;</span>
+          </div>
+        </div>
+
+        <div class="clientele-logos">
+          <img src="./images/logo_14.png" alt="Prevalent Automotive" loading="lazy">
+          <img src="./images/logo_15.png" alt="Kinetic Green" loading="lazy">
+          <img src="./images/logo_16.png" alt="Joy eBike" loading="lazy">
+          <img src="./images/logo_17.png" alt="EMobi" loading="lazy">
+          <img src="./images/logo_18.png" alt="Atumobile" loading="lazy">
+          <img src="./images/logo_19.png" alt="HCD" loading="lazy">
+          <img src="./images/logo_20.png" alt="I90" loading="lazy">
+          <img src="./images/logo_26.png" alt="Reveal" loading="lazy">
+        </div>
+      </div>
+
+      <!-- AGRICULTURE INDUSTRY -->
+      <div class="clientele-card">
+        <div class="clientele-card-banner">
+          <img src="./images/1791461256387.png"
+               alt="Agriculture Industry" loading="lazy">
+          <div class="clientele-card-banner-overlay">
+            <h3>Agriculture Industry</h3>
+            <span class="clientele-arrow">&#8594;</span>
+          </div>
+        </div>
+
+        <div class="clientele-logos">
+          <img src="./images/logo_02.jpeg" alt="REIL" loading="lazy">
+          <img src="./images/logo_05.png" alt="CG" loading="lazy">
+          <img src="./images/logo_10.png" alt="TAFE" loading="lazy">
+          <img src="./images/logo_03.jpeg" alt="Dynamech" loading="lazy">
+          <img src="./images/logo_22.png" alt="Oscillo" loading="lazy">
+          <img src="./images/logo_23.png" alt="SELCO" loading="lazy">
+          <img src="./images/logo_24.png" alt="Juno Solar" loading="lazy">
+          <img src="./images/logo_29.png" alt="Vishva" loading="lazy">
+          <img src="./images/logo_25.png" alt="Emmvee" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ===== OUR CLIENTELE SECTION ===== */
+  .clientele-section {
+    background: #f5f8fc;
+    padding: 70px 0;
+  }
+  .clientele-header {
+    margin-bottom: 45px;
+  }
+  .clientele-sub {
+    color: #6b7280;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .clientele-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+  .clientele-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 0 0 22px 0;
+    box-shadow: 0 2px 14px rgba(11, 60, 96, 0.07);
+    border: 1px solid #e8eef5;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .clientele-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 28px rgba(11, 60, 96, 0.14);
+  }
+  .clientele-card-banner {
+    position: relative;
+    height: 140px;
+    overflow: hidden;
+    margin-bottom: 18px;
+  }
+  .clientele-card-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+  .clientele-card:hover .clientele-card-banner img {
+    transform: scale(1.06);
+  }
+  .clientele-card-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(11, 60, 96, 0.92), rgba(11, 60, 96, 0.35));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 22px;
+  }
+  .clientele-card-banner-overlay h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.2px;
+  }
+  .clientele-arrow {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+    transition: transform 0.2s ease;
+  }
+  .clientele-card:hover .clientele-arrow {
+    transform: translateX(6px);
+  }
+  .clientele-logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    align-items: center;
+    padding: 0 22px;
+  }
+  .clientele-logos img {
+    width: 100%;
+    height: 62px;
+    object-fit: contain;
+    padding: 8px;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #eef2f7;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .clientele-logos img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 3px 10px rgba(11, 60, 96, 0.15);
+    border-color: #0b3c60;
+  }
+  @media (max-width: 960px) {
+    .clientele-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .clientele-section { padding: 50px 0; }
+    .clientele-card-banner { height: 110px; }
+    .clientele-card-banner-overlay h3 { font-size: 15px; }
+    .clientele-logos { gap: 8px; padding: 0 14px; }
+    .clientele-logos img { height: 52px; }
+  }
+</style>
+<!-- ===== END OUR CLIENTELE SECTION ===== -->
 
     </main>
 
